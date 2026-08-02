@@ -1,0 +1,216 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Weekly Edition Contract",
+  "type": "object",
+  "required": [
+    "meta",
+    "hero",
+    "executiveSummary",
+    "risks",
+    "priceBoard",
+    "landedCostChart",
+    "boardBox",
+    "sections",
+    "news",
+    "marketMoves"
+  ],
+  "properties": {
+    "marketMoves": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["actor", "action", "market", "detail", "impact", "url"],
+        "properties": {
+          "actor": { "type": "string" },
+          "action": { "type": "string" },
+          "market": { "type": "string" },
+          "detail": { "type": "string" },
+          "impact": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["edition", "week", "dates", "timestamp"],
+      "properties": {
+        "edition": { "type": "integer" },
+        "week": { "type": "string" },
+        "dates": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date" }
+      }
+    },
+    "hero": {
+      "type": "object",
+      "required": ["eyebrow", "title", "lede", "stamp"],
+      "properties": {
+        "eyebrow": { "type": "string" },
+        "title": { "type": "string" },
+        "lede": { "type": "string" },
+        "stamp": { "type": "string" }
+      }
+    },
+    "executiveSummary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "category", "categoryLabel", "description"],
+        "properties": {
+          "title": { "type": "string" },
+          "category": { "type": "string", "enum": ["cost", "demand", "competition", "regulation", "opportunity"] },
+          "categoryLabel": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "risks": {
+      "type": "object",
+      "required": ["critical", "emerging", "opportunities"],
+      "properties": {
+        "critical": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "description"],
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        },
+        "emerging": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "description"],
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        },
+        "opportunities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "description"],
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "priceBoard": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "group",
+          "indicator",
+          "value",
+          "numeric",
+          "est",
+          "week",
+          "month",
+          "year",
+          "reference"
+        ],
+        "properties": {
+          "group": { "type": "string" },
+          "indicator": { "type": "string" },
+          "value": { "type": "string" },
+          "numeric": { "type": ["number", "null"] },
+          "est": { "type": "boolean" },
+          "week": { "$ref": "#/definitions/delta" },
+          "month": { "$ref": "#/definitions/delta" },
+          "year": { "$ref": "#/definitions/delta" },
+          "reference": { "type": "string" }
+        }
+      }
+    },
+    "landedCostChart": {
+      "type": "object",
+      "required": ["origins"],
+      "properties": {
+        "origins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["origin", "fob", "freight", "total"],
+            "properties": {
+              "origin": { "type": "string" },
+              "fob": { "type": "number" },
+              "freight": { "type": "number" },
+              "total": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "boardBox": {
+      "type": "object",
+      "required": ["argosPR", "domicem", "questions"],
+      "properties": {
+        "argosPR": { "type": "string" },
+        "domicem": { "type": "string" },
+        "questions": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "num", "title", "subtitle", "subsections"],
+        "properties": {
+          "id": { "type": "string" },
+          "num": { "type": "integer" },
+          "title": { "type": "string" },
+          "subtitle": { "type": "string" },
+          "subsections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "content", "why"],
+              "properties": {
+                "title": { "type": "string" },
+                "content": { "type": "string" },
+                "why": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "news": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "title", "source", "date", "url", "domicemImpact"],
+        "properties": {
+          "category": { "type": "string" },
+          "title": { "type": "string" },
+          "source": { "type": "string" },
+          "date": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "domicemImpact": { "type": "boolean" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "delta": {
+      "type": "object",
+      "required": ["dir", "sentiment", "label"],
+      "properties": {
+        "dir": { "type": "string", "enum": ["up", "down", "flat", "nd"] },
+        "sentiment": { "type": "string", "enum": ["favorable", "adverse", "neutral"] },
+        "label": { "type": "string" }
+      }
+    }
+  }
+}

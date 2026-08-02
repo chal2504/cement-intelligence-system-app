@@ -1,0 +1,1209 @@
+{
+  "meta": {
+    "edition": 2,
+    "week": "27 jul – 02 ago 2026",
+    "dates": "27 jul – 02 ago 2026",
+    "timestamp": "2026-07-28"
+  },
+  "hero": {
+    "eyebrow": "Informe de inteligencia · No es noticias — es interpretación",
+    "title": "El crudo cede y el flete a granel se enfría: se abre una ventana barata para el clinker importado justo cuando el Caribe se calienta.",
+    "lede": "Brent bajó de su pico de ~US$100 a ~US$90 y las clases de flete que mueven clinker (Supramax y Panamax) cayeron a mínimos de ~3 meses. En contra: el diésel sigue subiendo (US$5.31/gal) y el peso colombiano está en su nivel más fuerte en 7 años. Mientras tanto Cemex, Titan y Heidelberg reportan un 2T fuerte, Jamaica dispara producción por la reconstrucción tras Melissa — y el faltante abre la puerta a importadores como Rock Hard (Maloney).",
+    "stamp": "Datos al 24–30 jul 2026. Las cifras marcadas EST son estimaciones trianguladas, no precios cotizados. Metodología y fuentes al pie."
+  },
+  "executiveSummary": [
+    {
+      "title": "El Brent cede a ~US$90/bbl desde el pico de ~US$100, pero sigue +21% en el mes",
+      "category": "cost",
+      "categoryLabel": "Costo",
+      "description": "El choque de oferta de Medio Oriente se descomprime: alivio para combustible y flete a mediano plazo, pero el nivel mensual sigue elevado. Es una tregua, no un cambio de tendencia."
+    },
+    {
+      "title": "El flete Supramax y Panamax cae a mínimos de ~3 meses; abarata el clinker importado",
+      "category": "opportunity",
+      "categoryLabel": "Oportunidad",
+      "description": "Con Panamax en ~US$19.8k/día y Supramax cediendo, el costo puesto del clinker importado baja justo cuando el crudo también afloja. Ventana para fijar volumen/flete antes de que el Baltic (Capesize) rebote."
+    },
+    {
+      "title": "Cemex reporta 2T26 récord (EBITDA US$1,018M, +24%) y sube su guía a 16–17%; Caribe/Centroamérica +34%",
+      "category": "competition",
+      "categoryLabel": "Competencia",
+      "description": "El mayor jugador del hemisferio está fuerte y disciplinado en precio, con el Caribe liderando. Benchmark de margen a batir en PR y RD."
+    },
+    {
+      "title": "El faltante en Jamaica abre la puerta a importadores: el gobierno licencia a 6 firmas — incluida Rock Hard de Mark Maloney (100k t) — mientras Caribbean Cement produce +33%",
+      "category": "competition",
+      "categoryLabel": "Competencia",
+      "description": "La demanda post-Melissa superó a la oferta (agravada por una parada en Rockfort) y forzó importación por 6 meses. Que un disruptor probado como Maloney (que doblegó a TCL en Barbados por aranceles CET) entre a un feudo de Cemex es la señal de la semana: cuando el productor local tropieza, el mercado se abre a la importación en semanas. Plantilla y amenaza para Argos PR y Domicem."
+    },
+    {
+      "title": "El peso colombiano toca su nivel más fuerte en 7 años (USD/COP ~3,207)",
+      "category": "cost",
+      "categoryLabel": "Costo",
+      "description": "Encarece el clinker de Colombia en dólares — el origen cercano preferido. No borra la ventaja de flete corto de Cartagena, pero la estrecha frente a Turquía/Egipto."
+    },
+    {
+      "title": "El diésel de EE.UU. sube a US$5.31/gal (+~18¢ en la semana)",
+      "category": "cost",
+      "categoryLabel": "Costo",
+      "description": "Aunque el crudo cede, el diésel al menudeo va al alza y castiga el transporte terrestre y la última milla — el costo que más pesa en la distribución en las islas."
+    },
+    {
+      "title": "Titan America (2T26 +9.6%) y Heidelberg (2T26 +6%) reportan trimestres sólidos",
+      "category": "competition",
+      "categoryLabel": "Competencia",
+      "description": "Titan avanza Keystone y es hub de importación plausible desde Florida; Heidelberg crece con 38% de ingresos sostenibles. Los majors se fortalecen: benchmarks de precio y orígenes de importación para PR."
+    },
+    {
+      "title": "Grupo Estrella / PANAM (RD) acerca su proyecto de clinker (Sinoma CBMI) a la meta",
+      "category": "competition",
+      "categoryLabel": "Competencia",
+      "description": "Un rival dominicano ya regional (compró Cemex Panamá) está por sumar capacidad de clinker propia. Amenaza competitiva #1 para Domicem."
+    },
+    {
+      "title": "El CBAM europeo entra en fase definitiva: compra de certificados desde enero 2026",
+      "category": "regulation",
+      "categoryLabel": "Regulación",
+      "description": "Con el mecanismo cobrando, la incertidumbre frena el pricing turco y desvía clinker de alto carbono hacia la cuenca atlántica = más oferta y competencia de precio en el Caribe."
+    },
+    {
+      "title": "Taiwán y Filipinas aplican/ratifican antidumping al cemento y clinker de Vietnam",
+      "category": "regulation",
+      "categoryLabel": "Regulación",
+      "description": "Dos mercados asiáticos cierran la puerta al tonelaje vietnamita, empujándolo a buscar salidas — potencial desvío oportunista hacia el Atlántico."
+    }
+  ],
+  "risks": {
+    "critical": [
+      {
+        "title": "Diésel al alza (US$5.31/gal) pese al crudo más bajo",
+        "description": "Castiga la distribución terrestre y la última milla en las islas. El costo local que no cede aunque el crudo afloje."
+      },
+      {
+        "title": "Peso colombiano en máximo de 7 años",
+        "description": "Encarece el origen cercano preferido (Colombia) y estrecha su ventaja de costo puesto frente a Turquía/Egipto."
+      },
+      {
+        "title": "Sobrecapacidad dominicana en formación",
+        "description": "Domicem L2, Cibao y el proyecto PANAM (por completarse) suman capacidad; riesgo de sobreoferta y presión de precio a mediano plazo."
+      }
+    ],
+    "emerging": [
+      {
+        "title": "CBAM definitivo desvía clinker al Atlántico",
+        "description": "El clinker turco de alto carbono busca destinos fuera de la UE = más oferta y competencia de precio en el Caribe."
+      },
+      {
+        "title": "Antidumping a Vietnam (Taiwán, Filipinas)",
+        "description": "Redirige tonelaje vietnamita; puede aparecer como oferta oportunista de bajo precio en la cuenca atlántica."
+      },
+      {
+        "title": "SCM al alza (fly ash ~US$122, escoria ~US$107)",
+        "description": "Los materiales cementantes suplementarios se encarecen; presiona la economía de las mezclas."
+      },
+      {
+        "title": "Desembolso lento CDBG-DR en PR",
+        "description": "Fondos comprometidos pero de ejecución lenta: el volumen financiado aún no se traduce del todo en ventas."
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "Flete Supramax/Panamax en mínimos de ~3 meses",
+        "description": "Mejor costo puesto del clinker importado; ventana para fijar volumen y flete antes de que el Baltic rebote."
+      },
+      {
+        "title": "Crudo cediendo desde el pico (~US$90)",
+        "description": "Alivio para el combustible del horno y el flete de respaldo tras el susto de ~US$100."
+      },
+      {
+        "title": "Reconstrucción de Jamaica (post-Melissa)",
+        "description": "Demanda regional fuerte (Caribbean Cement +33% producción); Cemex Caribe/Centroamérica +34% EBITDA."
+      },
+      {
+        "title": "Boom de Guyana (~US$5B, PIB ~14%)",
+        "description": "La mayor demanda de importación no atendida de la región; auge del crédito a la construcción."
+      }
+    ]
+  },
+  "priceBoard": [
+    {
+      "group": "Clinker & cemento",
+      "indicator": "Clinker FOB Turquía",
+      "value": "US$45–47/t",
+      "est": false,
+      "week": {
+        "dir": "nd",
+        "sentiment": "neutral",
+        "label": "n/d"
+      },
+      "month": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ vs 2025"
+      },
+      "reference": "Contrato 2026 · S&P/Argus (Medcem)"
+    },
+    {
+      "group": "Clinker & cemento",
+      "indicator": "Cemento a granel FOB Turquía",
+      "value": "US$53.5–55/t",
+      "est": false,
+      "week": {
+        "dir": "nd",
+        "sentiment": "neutral",
+        "label": "n/d"
+      },
+      "month": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ desde $52"
+      },
+      "reference": "Contrato 2026 · S&P"
+    },
+    {
+      "group": "Clinker & cemento",
+      "indicator": "Clinker CIF Caribe",
+      "value": "~US$70–85/t",
+      "numeric": 77.5,
+      "est": true,
+      "week": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼"
+      },
+      "month": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "reference": "FOB + flete, triangulado (flete a la baja)"
+    },
+    {
+      "group": "Combustibles",
+      "indicator": "Petcoke FOB USGC (fuel-grade)",
+      "value": "~US$70–75/t",
+      "est": true,
+      "week": {
+        "dir": "nd",
+        "sentiment": "neutral",
+        "label": "n/d"
+      },
+      "month": {
+        "dir": "nd",
+        "sentiment": "neutral",
+        "label": "n/d"
+      },
+      "year": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "reference": "sin cotización pública 2026; presión bajista USGC (Argus)"
+    },
+    {
+      "group": "Combustibles",
+      "indicator": "Carbón térmico API2 (Rotterdam)",
+      "value": "US$110–112/t",
+      "numeric": 111,
+      "est": false,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "reference": "jul · Investing.com"
+    },
+    {
+      "group": "Combustibles",
+      "indicator": "Gas natural Henry Hub",
+      "value": "US$2.8/MMBtu",
+      "numeric": 2.8,
+      "est": false,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "year": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "reference": "14 jul · EIA (prom. 2026 $3.67)"
+    },
+    {
+      "group": "Combustibles",
+      "indicator": "Diésel EE.UU. (retail)",
+      "value": "US$5.31/gal",
+      "numeric": 5.31,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ ~3.5%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "reference": "27 jul · EIA"
+    },
+    {
+      "group": "SCM (materiales cementantes suplementarios)",
+      "indicator": "Fly ash EE.UU.",
+      "value": "~US$122/t",
+      "numeric": 122,
+      "est": true,
+      "week": {
+        "dir": "nd",
+        "sentiment": "neutral",
+        "label": "n/d"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "reference": "4T25 · índice EMR"
+    },
+    {
+      "group": "SCM (materiales cementantes suplementarios)",
+      "indicator": "Escoria GGBFS EE.UU.",
+      "value": "~US$107/t",
+      "numeric": 107,
+      "est": true,
+      "week": {
+        "dir": "nd",
+        "sentiment": "neutral",
+        "label": "n/d"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "reference": "2T26 · índice EMR"
+    },
+    {
+      "group": "Fletes marítimos",
+      "indicator": "Baltic Dry Index (BDI)",
+      "value": "2,743",
+      "numeric": 2743,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ (Capesize)"
+      },
+      "month": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "year": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "reference": "24 jul · Baltic/Trading Economics"
+    },
+    {
+      "group": "Fletes marítimos",
+      "indicator": "Handysize (BHSI)",
+      "value": "US$16,960/día",
+      "numeric": 16960,
+      "est": false,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼"
+      },
+      "year": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "reference": "3 jul · Baltic/Signal"
+    },
+    {
+      "group": "Fletes marítimos",
+      "indicator": "Supramax (BSI)",
+      "value": "US$19,119/día",
+      "numeric": 19119,
+      "est": false,
+      "week": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼"
+      },
+      "month": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼"
+      },
+      "year": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼"
+      },
+      "reference": "3 jul · Baltic/Signal (en descenso)"
+    },
+    {
+      "group": "Fletes marítimos",
+      "indicator": "Panamax (BPI)",
+      "value": "US$19,825/día",
+      "numeric": 19825,
+      "est": false,
+      "week": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼ (mín. 3m)"
+      },
+      "month": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼"
+      },
+      "year": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼"
+      },
+      "reference": "24 jul · Baltic (mínimo ~3 meses)"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "Brent",
+      "value": "US$89.78/bbl",
+      "numeric": 89.78,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ (semana)"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 21%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 23%"
+      },
+      "reference": "30 jul · cedió desde ~$100"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "WTI",
+      "value": "US$83.59/bbl",
+      "numeric": 83.59,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲"
+      },
+      "reference": "30 jul · brecha Brent–WTI ~$6"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "USD/TRY (lira turca)",
+      "value": "47.12",
+      "numeric": 47.12,
+      "est": false,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "favorable",
+        "label": "▲"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "favorable",
+        "label": "▲ ~17%"
+      },
+      "reference": "16 jul · abarata clinker turco en USD"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "USD/COP (peso colombiano)",
+      "value": "3,207",
+      "numeric": 3207,
+      "est": false,
+      "week": {
+        "dir": "down",
+        "sentiment": "adverse",
+        "label": "▼ (peso ↑)"
+      },
+      "month": {
+        "dir": "down",
+        "sentiment": "adverse",
+        "label": "▼ (peso ↑)"
+      },
+      "year": {
+        "dir": "down",
+        "sentiment": "adverse",
+        "label": "▼ máx. 7 años"
+      },
+      "reference": "23 jul · encarece origen Colombia"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "USD/DOP (peso dominicano)",
+      "value": "58.78",
+      "numeric": 58.78,
+      "est": false,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "year": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "reference": "25 jun · estable"
+    }
+  ],
+  "landedCostChart": {
+    "origins": [
+      {
+        "origin": "Colombia",
+        "fob": 52,
+        "freight": 14,
+        "total": 66
+      },
+      {
+        "origin": "Egipto",
+        "fob": 43,
+        "freight": 28,
+        "total": 71
+      },
+      {
+        "origin": "Argelia",
+        "fob": 41,
+        "freight": 30,
+        "total": 71
+      },
+      {
+        "origin": "Turquía",
+        "fob": 46,
+        "freight": 32,
+        "total": 78
+      },
+      {
+        "origin": "Vietnam",
+        "fob": 38,
+        "freight": 45,
+        "total": 83
+      }
+    ]
+  },
+  "boardBox": {
+    "argosPR": "Único productor con planta en la isla: el riesgo es de margen, no de suministro. Buena noticia doble: crudo cede y flete a granel se enfría, abaratando cualquier importación de respaldo. Mala: el diésel sube a US$5.31/gal y castiga la distribución en tierra. Palanca: defender precio y vigilar el desembolso CDBG-DR/red mientras se aprovecha la ventana de flete barato.",
+    "domicem": "Mercado dominicano sano (+2.4% 2026e) y FX estable. Pero el tablero se aprieta: Cibao ya sumó clinker y Grupo Estrella/PANAM está por completar su propia línea (Sinoma CBMI), volviéndose rival regional con capacidad propia. Riesgo: sobreoferta dominicana. Oportunidad: flete barato para complementar con importación y observar si PANAM trae clinker importado más barato.",
+    "questions": [
+      "Con el flete Supramax/Panamax en mínimos de ~3 meses, ¿estamos aprovechando la ventana para fijar volumen y flete de clinker importado a costo puesto bajo, antes de que el Baltic rebote?",
+      "Con el peso colombiano en máximo de 7 años, ¿cómo cambia el cálculo Colombia vs. Turquía/Egipto en costo puesto, y deberíamos diversificar más el mix de orígenes?",
+      "En PR, con reconstrucción financiada pero lenta, ¿cuál es nuestro rango de volumen 2026 según se acelere o retrase el desembolso CDBG-DR y de la red?"
+    ]
+  },
+  "sections": [
+    {
+      "id": "s2",
+      "num": 2,
+      "title": "Materias primas",
+      "subtitle": "Precio, oferta/demanda y riesgo de los insumos del clinker y las mezclas.",
+      "subsections": [
+        {
+          "title": "Clinker",
+          "content": "FOB Turquía US$45–47/t (contrato 2026 de Medcem, al alza; pricing frenado por CBAM). El precio que importa es el puesto (CIF), que baja esta semana por el flete Supramax/Panamax débil: ~US$70–85/t desde Turquía, menos desde Colombia.",
+          "why": "Caribe: se abrió una ventana de costo puesto más bajo. Reservar temprano protege el margen 2026."
+        },
+        {
+          "title": "Fly ash · Escoria (GBFS)",
+          "content": "Fly ash ~US$122/t y subiendo por el retiro del carbón. Escoria GGBFS repuntó a ~US$107/t (2T26). Ambos SCM se encarecen a la vez.",
+          "why": "Caribe: asegurar volúmenes y evaluar puzolanas locales y LC3 gana urgencia."
+        },
+        {
+          "title": "Caliza · Yeso · Arcilla",
+          "content": "Caliza estable (insumo local). El yeso sintético (FGD) sufre el apretón del retiro del carbón. Arcilla y caliza abundantes — base del LC3.",
+          "why": "Caribe: reservas propias de caliza y arcilla son ventaja estratégica frente a SCM importados."
+        },
+        {
+          "title": "Puzolanas · Bauxita · Mineral de hierro",
+          "content": "Puzolanas naturales sin precio spot claro pero con demanda creciente. Bauxita y hierro son correctores minoritarios de la harina cruda.",
+          "why": "Caribe: puzolanas volcánicas regionales pueden bajar el factor clinker con insumo local."
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "num": 3,
+      "title": "Combustibles",
+      "subtitle": "El combustible es 30–40% del costo de fabricar clinker.",
+      "subsections": [
+        {
+          "title": "Petcoke",
+          "content": "Sin cotización pública fiable 2026; mayor producción USGC presiona a la baja. Sigue siendo el combustible de horno más económico.",
+          "why": "Caribe: con el crudo cediendo, la economía del petcoke mejora. Mantente en petcoke sobre carbón."
+        },
+        {
+          "title": "Carbón · Gas · Diésel",
+          "content": "Carbón API2 ~US$110–112/t. Gas Henry Hub barato (~US$2.8/MMBtu). Diésel EE.UU. US$5.31/gal, +~18¢ en la semana.",
+          "why": "Caribe: el diésel caro es el costo que no cede; encarece la distribución en tierra."
+        },
+        {
+          "title": "Combustibles alternativos · RDF · Neumáticos · Biomasa",
+          "content": "El coprocesamiento sustituye fósil y aporta ingresos por gestión de residuos. La tasa de sustitución térmica es KPI competitivo clave.",
+          "why": "Caribe: cobertura estructural contra el petróleo, aunque el petcoke barato reduce el incentivo hoy."
+        },
+        {
+          "title": "Electricidad",
+          "content": "Redes caribeñas caras y expuestas al petróleo. La molienda es intensiva en electricidad.",
+          "why": "Caribe: autogeneración con petcoke o gas puede batir la tarifa de red en molienda."
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "num": 4,
+      "title": "Fletes marítimos",
+      "subtitle": "La variable que redefine la competitividad de cada origen — esta semana a tu favor.",
+      "subsections": [
+        {
+          "title": "Panorama",
+          "content": "El Baltic Dry ronda 2,743 sostenido por Capesize, mientras Handysize/Supramax/Panamax están débiles. Para el importador de clinker, el flete relevante bajó esta semana."
+        },
+        {
+          "title": "Colombia → Caribe (EST)",
+          "content": "Flete estimado (US$/t): US$12–18 · Ventaja: Corto (~2–4 días)"
+        },
+        {
+          "title": "EE.UU. Golfo → Caribe (EST)",
+          "content": "Flete estimado (US$/t): US$14–22 · Ventaja: Corto"
+        },
+        {
+          "title": "Turquía → Caribe (EST)",
+          "content": "Flete estimado (US$/t): US$28–40 · Ventaja: Largo, pero abaratándose"
+        },
+        {
+          "title": "Vietnam → Caribe (EST)",
+          "content": "Flete estimado (US$/t): US$42–52 · Ventaja: Muy largo (~10,000 nm)"
+        },
+        {
+          "title": "Lectura",
+          "content": "Caribe: el flete juega hoy a favor del importador. Ventana para fijar flete (COA/forward) antes de que el rebote del Capesize contagie a las clases menores."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "num": 5,
+      "title": "Importaciones — países proveedores",
+      "subtitle": "Disponibilidad para exportar al Caribe y su implicación de suministro.",
+      "subsections": [
+        {
+          "title": "🇨🇴 Colombia",
+          "content": "FOB (US$/t): ~52 (EST) · Disponibilidad: Alta · Nota clave: Terminal Cartagena (Argos), 3.5 Mt/año. Flete corto — pero el peso fuerte encarece el FOB en USD."
+        },
+        {
+          "title": "🇹🇷 Turquía",
+          "content": "FOB (US$/t): 45–47 · Disponibilidad: Media-alta · Nota clave: Ancla del Caribe; 'fully booked' 2026, pricing frenado por CBAM. Flete abaratándose."
+        },
+        {
+          "title": "🇪🇬 Egipto",
+          "content": "FOB (US$/t): ~43 (EST) · Disponibilidad: Media · Nota clave: Sobrecapacidad, empuje exportador. Vigilar FX y términos de pago."
+        },
+        {
+          "title": "🇩🇿 Argelia",
+          "content": "FOB (US$/t): ~41 (EST) · Disponibilidad: Media · Nota clave: Empuje estatal (GICA), gas subsidiado, precio agresivo. Confirmar ASTM."
+        },
+        {
+          "title": "🇻🇳 Vietnam",
+          "content": "FOB (US$/t): ~38 (EST) · Disponibilidad: Media · Nota clave: FOB más barato pero lejísimos; ahora con AD en Taiwán/Filipinas — puede buscar salidas atlánticas."
+        },
+        {
+          "title": "🇲🇽 México",
+          "content": "FOB (US$/t): ~60–75 (EST) · Disponibilidad: Media · Nota clave: Cercano pero jalado por EE.UU. y con ruido arancelario."
+        },
+        {
+          "title": "🇵🇰 Pakistán / 🇸🇦 Golfo",
+          "content": "FOB (US$/t): ~40–44 (EST) · Disponibilidad: Baja · Nota clave: Excedente pero geografía equivocada."
+        },
+        {
+          "title": "🇧🇷 Brasil / 🇺🇸 Golfo EE.UU.",
+          "content": "FOB (US$/t): — · Disponibilidad: Baja como fuente · Nota clave: Enfocados a demanda propia; el Golfo de EE.UU. es rival comprador."
+        },
+        {
+          "title": "Lectura",
+          "content": "Caribe: aprovechar el flete débil para reservar volumen ancla (Turquía) y de precio (Egipto/Argelia), sin abandonar a Colombia como primaria pese al peso fuerte."
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "num": 6,
+      "title": "SCM — sustitutos del clinker",
+      "subtitle": "Reducir el factor clinker es la mayor palanca de costo y de CO₂ a la vez.",
+      "subsections": [
+        {
+          "title": "Fly ash",
+          "content": "~US$122/t y subiendo. Oferta en declive por cierres de carbón."
+        },
+        {
+          "title": "Escoria (GGBFS)",
+          "content": "~US$107/t (2T26), repuntando por escasez de largo plazo (menos altos hornos)."
+        },
+        {
+          "title": "Puzolanas naturales",
+          "content": "Sin precio spot; demanda creciente. El Caribe tiene recursos volcánicos."
+        },
+        {
+          "title": "Arcilla calcinada / LC3",
+          "content": "Fuerte impulso 2026. Usa arcilla + caliza; esquiva la escasez de fly ash/escoria. La cobertura de mediano plazo del Caribe."
+        },
+        {
+          "title": "Filler de caliza (PLC)",
+          "content": "Type IL (ASTM C595) ya es el reemplazo por defecto del portland puro en EE.UU."
+        },
+        {
+          "title": "¿Quién sustituye clinker?",
+          "content": "Todos: reduce costo y CO₂ a la vez. El límite es disponibilidad local de SCM y normas."
+        },
+        {
+          "title": "Lectura Caribe",
+          "content": "Caribe: con fly ash y escoria al alza, desarrollar LC3/PLC con insumos locales es defensa de costo, suministro y ESG."
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "num": 7,
+      "title": "Competencia",
+      "subtitle": "Movimientos que cambian el tablero de PR, RD y el Caribe — semana cargada de resultados 2T.",
+      "subsections": [
+        {
+          "title": "Cemex",
+          "content": "2T26 EBITDA récord US$1,018M (+24%, margen 22.2%); guía 2026 a 16–17%. Caribe/Centroamérica EBITDA +34%.",
+          "why": "Fuerte y disciplinado en precio, con el Caribe como motor: el benchmark a batir."
+        },
+        {
+          "title": "Grupo Argos / Argos USA",
+          "content": "1T26 ingreso US$2.7B, EBITDA US$713M; neta −23% por Celsia. Cementos Argos: ingreso US$1.2B, volúmenes cemento +4%, concreto +9%. Separación Argos Materials/Latam.",
+          "why": "Buen desempeño operativo; PR queda en la plataforma Latam/Caribe."
+        },
+        {
+          "title": "Grupo Estrella / Cemento PANAM (RD)",
+          "content": "El proyecto de clinker (Sinoma CBMI) cerca de completarse; ya compró Cemex Panamá (~US$200M).",
+          "why": "La amenaza competitiva #1 para Domicem: rival dominicano regional a punto de tener clinker propio."
+        },
+        {
+          "title": "Cementos Cibao · Domicem",
+          "content": "Cibao sumó línea de clinker + molienda; Domicem opera su Línea 2 (~duplica capacidad).",
+          "why": "Capacidad dominicana en alza: bien hoy, riesgo de sobreoferta a mediano plazo."
+        },
+        {
+          "title": "Caribbean Cement (Jamaica, Cemex)",
+          "content": "1T26 ingreso +12.9% (JMD9.3B), utilidad +52.8%, producción +33% (~289,700 t) por reconstrucción post-Melissa.",
+          "why": "El mercado caribeño más caliente del trimestre; nodo de importación/exportación."
+        },
+        {
+          "title": "Titan · Holcim/Amrize · Heidelberg",
+          "content": "Titan America 2T26 US$470.6M (+9.6%), avanza Keystone; Heidelberg 2T26 €6B (+6%), 38% sostenibles (H1).",
+          "why": "Los majors se fortalecen: benchmarks de precio y orígenes de importación para PR."
+        },
+        {
+          "title": "🆕 Rock Hard / importadores (Jamaica)",
+          "content": "Ante el faltante, Jamaica licenció a 6 importadores por 6 meses; Rock Hard Cement (Mark Maloney) obtuvo 100k t (junto a Jamaica Logistics, Tank-Weld, Island Concrete, Gore, The Buying House). Maloney ya es importador pan-caribeño tras años de pleito arancelario CET con TCL.",
+          "why": "Un canal de importación de bajo costo escala por la cuenca y penetra un feudo de Cemex: amenaza de precio a mediano plazo y plantilla de opcionalidad de importación. Vigilar si la ventana de 6 meses se vuelve permanente y los términos CET."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "num": 8,
+      "title": "Caribe — mercados",
+      "subtitle": "Dirección de la demanda y drivers por país.",
+      "subsections": [
+        {
+          "title": "🇵🇷 Puerto Rico",
+          "content": "Demanda: ≈ financiado, lento · Driver principal: Reconstrucción federal (CDBG-DR, R3, red) de ejecución lenta · Suministro: Planta local (Argos) + terminal de importación"
+        },
+        {
+          "title": "🇩🇴 Rep. Dominicana",
+          "content": "Demanda: ▲ +2.4% (2026e) · Driver principal: IED, crédito, turismo y obra pública · Suministro: Bien abastecido (Domicem, Cemex, Cibao, PANAM)"
+        },
+        {
+          "title": "🇬🇾 Guyana",
+          "content": "Demanda: ▲▲ boom (~14% PIB) · Driver principal: Petróleo: pipeline ~US$5B, auge del crédito · Suministro: Capacidad local mínima — muy importador"
+        },
+        {
+          "title": "🇯🇲 Jamaica",
+          "content": "Demanda: ▲▲ récord (post-Melissa) · Driver principal: Reconstrucción tras Melissa; Caribbean Cement +33% · Suministro: Planta local + importa vía red Cemex + 6 importadores licenciados"
+        },
+        {
+          "title": "🇧🇧 Barbados",
+          "content": "Demanda: ▲ fuerte · Driver principal: Cartera hotelera en construcción · Suministro: Importado (Rock Hard activo)"
+        },
+        {
+          "title": "🇧🇸 Bahamas",
+          "content": "Demanda: ▲ turismo · Driver principal: Expansiones de resorts · Suministro: Totalmente importado"
+        },
+        {
+          "title": "🇹🇹 Trinidad",
+          "content": "Demanda: ≈ moderada · Driver principal: TCL (Cemex); exportador regional · Suministro: TCL local"
+        },
+        {
+          "title": "🇸🇷 Surinam",
+          "content": "Demanda: ▲ temprano · Driver principal: GranMorgu (petróleo); vivienda · Suministro: Importado"
+        },
+        {
+          "title": "🇭🇹 Haití",
+          "content": "Demanda: ▼ deprimido · Driver principal: Violencia y colapso estatal · Suministro: Importado, disrupción portuaria"
+        },
+        {
+          "title": "🇨🇼 Curazao / 🇦🇼 Aruba",
+          "content": "Demanda: ≈ a ▲ · Driver principal: Turismo + hub petróleo Guyana/Surinam · Suministro: Importado"
+        },
+        {
+          "title": "Lectura",
+          "content": "Lectura: los motores son Jamaica (post-Melissa), Guyana (boom importador) y RD (mercado sano). Suave: PR (financiado pero lento) y Haití."
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "num": 9,
+      "title": "Construcción — indicadores líderes",
+      "subtitle": "Lo que anticipa el consumo de cemento 6–18 meses antes.",
+      "subsections": [
+        {
+          "title": "Puerto Rico",
+          "content": "El indicador que manda es el ritmo de desembolso CDBG-DR (R3) y contratos de la red. Fondos abundantes; el cuello de botella es la ejecución."
+        },
+        {
+          "title": "República Dominicana",
+          "content": "Construcción proyectada +2.4% en 2026 por IED, crédito y actividad."
+        },
+        {
+          "title": "Guyana & Surinam",
+          "content": "El pipeline más intensivo en concreto: ~US$5B en infraestructura, PIB ~14%, auge del crédito. Surinam arranca con GranMorgu."
+        },
+        {
+          "title": "Jamaica (post-Melissa)",
+          "content": "La reconstrucción disparó el consumo: Caribbean Cement +33% en 1T26. Choque de demanda que aprieta el suministro regional."
+        },
+        {
+          "title": "Lectura Caribe",
+          "content": "Caribe: en PR el KPI es '¿cuánto se desembolsó?'. En Jamaica, RD y Guyana el pipeline es firme — el riesgo es de suministro/logística."
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "num": 10,
+      "title": "Regulación & comercio",
+      "subtitle": "Reglas que mueven flujos de clinker y costos de importación.",
+      "subsections": [
+        {
+          "title": "CBAM (UE)",
+          "content": "Fase definitiva desde ene 2026: compra de certificados. La incertidumbre frena el pricing turco.",
+          "why": "Efecto 2º orden: desvía clinker de alto carbono hacia EE.UU./Caribe = más oferta y competencia de precio."
+        },
+        {
+          "title": "Aranceles EE.UU.",
+          "content": "Cambios recientes (Sección 232) en acero/aluminio/cobre; no hay arancel 232 específico a cemento/clinker. Panorama en flujo — vigilar por PR."
+        },
+        {
+          "title": "Antidumping / dumping",
+          "content": "Taiwán impuso AD al cemento/clinker vietnamita y Filipinas ratificó sus derechos.",
+          "why": "Empuja tonelaje vietnamita a buscar salidas — potencial desvío hacia el Atlántico."
+        },
+        {
+          "title": "Normas ASTM / EN",
+          "content": "Type IL (PLC, ASTM C595) ya es el reemplazo por defecto del portland puro en EE.UU. Favorable a productos de menor factor clinker."
+        },
+        {
+          "title": "Lectura Caribe",
+          "content": "Caribe: vigilar las desviaciones de clinker (CBAM + AD a Vietnam) que traen oferta barata a la cuenca atlántica, y el flujo arancelario de EE.UU."
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "num": 11,
+      "title": "Finanzas & macro",
+      "subtitle": "Todo esto termina en el costo y la demanda del cemento.",
+      "subsections": [
+        {
+          "title": "Energía: el crudo cede",
+          "content": "Brent ~US$90 (desde el pico de ~US$100), aún +21% mes. El choque de oferta se descomprime; sin cambio de tendencia. Gas barato y estable."
+        },
+        {
+          "title": "Inflación y tasas",
+          "content": "El diésel al alza y un crudo aún elevado mantienen presión de costos de transporte. Tasas restrictivas pesan sobre el volumen."
+        },
+        {
+          "title": "Divisas clave",
+          "content": "USD/COP ~3,207 (peso máx. 7 años): encarece Colombia — el gran movimiento. USD/TRY ~47 (lira débil): abarata clinker turco. USD/DOP ~58.8: estable."
+        },
+        {
+          "title": "Costo de capital",
+          "content": "Con tasas restrictivas, cada capex compite contra un costo de capital elevado — la disciplina importa más con capacidad dominicana en formación."
+        },
+        {
+          "title": "Lectura Caribe",
+          "content": "Caribe: la cadena se invirtió parcialmente — crudo ↓ y flete ↓ (favorable), pero diésel ↑ y peso colombiano ↑ (adverso). Neto: ventana de compra de importación, con FX de origen como riesgo a cubrir."
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "num": 12,
+      "title": "ESG & descarbonización",
+      "subtitle": "El cemento es ~7–8% del CO₂ global; la regulación y el capital lo persiguen.",
+      "subsections": [
+        {
+          "title": "La palanca #1: factor clinker",
+          "content": "Reducir clinker por tonelada (SCM: PLC, LC3, escoria, puzolanas) baja CO₂ y costo. Heidelberg reporta 38% de ingresos en productos sostenibles."
+        },
+        {
+          "title": "Captura de carbono (CCUS)",
+          "content": "Pilotos globales; caro y dependiente de subsidios. Relevante para plantas bajo CBAM, menos urgente para el Caribe hoy."
+        },
+        {
+          "title": "Combustibles alternativos & hidrógeno",
+          "content": "El coprocesamiento sube la sustitución térmica; el hidrógeno es experimental. Biomasa y RDF son las palancas cercanas."
+        },
+        {
+          "title": "Cementos verdes",
+          "content": "PLC/LC3 ya son mainstream en EE.UU.; los clínkeres novedosos siguen en fases tempranas."
+        },
+        {
+          "title": "Lectura Caribe",
+          "content": "Caribe: bajar el factor clinker con SCM locales. Con fly ash y escoria caros, LC3/PLC con arcilla y caliza regional es doblemente atractivo."
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "num": 13,
+      "title": "Tecnología",
+      "subtitle": "Dónde la digitalización crea ventaja de costo real.",
+      "subsections": [
+        {
+          "title": "IA y optimización de hornos",
+          "content": "Control avanzado + IA estabilizan el horno, bajan combustible por tonelada y suben sustitución térmica. La aplicación de mayor retorno hoy."
+        },
+        {
+          "title": "Mantenimiento predictivo & digital twins",
+          "content": "Sensores + modelos predicen fallas antes de que ocurran — defensa contra paradas no planificadas."
+        },
+        {
+          "title": "Automatización & robótica",
+          "content": "Paletizado, laboratorio y muestreo robótico. Mejora calidad y reduce mano de obra."
+        },
+        {
+          "title": "Control de calidad & sensores",
+          "content": "Analizadores en línea (XRF/XRD) mantienen la química del clinker en objetivo, maximizando SCM sin salir de norma."
+        },
+        {
+          "title": "Lectura Caribe",
+          "content": "Caribe: el caso más claro es mantenimiento predictivo (evitar paradas) y optimización de horno por IA (bajar combustible)."
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Cemex sube su guía 2026 tras un 2T fuerte (EBITDA US$1,018M, +24%; Caribe/Centroamérica +34%)",
+      "source": "Investing.com",
+      "date": "23–24 jul 2026",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-cemex-lifts-2026-outlook-after-strong-q2-results-93CH-4809631"
+    },
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Grupo Argos: menor utilidad 1T26 pese a mejor desempeño de cemento (volúmenes +4%)",
+      "source": "CemNet / ICR",
+      "date": "2026",
+      "url": "https://www.cemnet.com/News/story/181347/grupo-argos-reports-lower-1q26-earnings-despite-stronger-cement-performance.html"
+    },
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Caribbean Cement (Jamaica) dispara resultados 1T26: utilidad +53%, producción +33% por reconstrucción post-Melissa",
+      "source": "CemNet / ICR",
+      "date": "2026",
+      "url": "https://www.cemnet.com/News/story/181287/caribbean-cement-posts-strong-1q26-results.html"
+    },
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Titan America: resultados 2T26 (ingreso US$470.6M, +9.6%) y avance de Keystone",
+      "source": "Titan America IR",
+      "date": "28 jul 2026",
+      "url": "https://ir.titanamerica.com/press-releases/detail/106/titan-america-announces-second-quarter-2026-results"
+    },
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Heidelberg Materials: 2T26 ingreso €6B (+6%); 38% de ingresos en productos sostenibles (H1)",
+      "source": "Global Cement",
+      "date": "30 jul 2026",
+      "url": "https://www.globalcement.com/news/21062-heidelberg-materials-reports-2026-second-quarter-financial-results"
+    },
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Sinoma CBMI cerca de completar el proyecto PANAM (Grupo Estrella, RD)",
+      "source": "CemNet / ICR",
+      "date": "contexto",
+      "url": "https://www.cemnet.com/News/story/179075/sinoma-cbmi-latin-america-close-to-completing-panam-project.html",
+      "domicemImpact": true
+    },
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Jamaica autoriza a 6 firmas a importar cemento (incl. Rock Hard de Maloney, 100k t) ante el faltante",
+      "source": "Jamaica Gleaner",
+      "date": "18 jun 2026",
+      "url": "https://jamaica-gleaner.com/article/news/20260618/five-firms-cleared-import-cement"
+    },
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Seis compañías reciben permisos de importación del gobierno jamaicano",
+      "source": "Global Cement",
+      "date": "jun 2026",
+      "url": "https://www.globalcement.com/news/20897-five-companies-receive-import-permits-from-jamaican-government"
+    },
+    {
+      "category": "📦 Materias primas, combustibles & fletes",
+      "title": "Turquía: Medcem 'totalmente vendida' para 2026 con precios de clinker al alza (FOB $45–47/t)",
+      "source": "S&P Global",
+      "date": "2026",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/fertilizers/120425-turkeys-medcem-fully-booked-for-2026-with-higher-cement-clinker-prices"
+    },
+    {
+      "category": "📦 Materias primas, combustibles & fletes",
+      "title": "La incertidumbre por CBAM frena los precios del cemento turco",
+      "source": "Argus Media",
+      "date": "2026",
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2775803-cbam-uncertainty-stalls-turkish-cement-pricing"
+    },
+    {
+      "category": "📦 Materias primas, combustibles & fletes",
+      "title": "Baltic Dry en 2,743: sube por Capesize mientras Panamax cae a mínimo de ~3 meses",
+      "source": "Trading Economics",
+      "date": "24 jul 2026",
+      "url": "https://tradingeconomics.com/commodity/baltic/news/569812"
+    },
+    {
+      "category": "📦 Materias primas, combustibles & fletes",
+      "title": "EIA sube su pronóstico de Henry Hub para 2026–2027 (prom. ~$3.67/MMBtu)",
+      "source": "Rigzone / EIA",
+      "date": "15 jul 2026",
+      "url": "https://www.rigzone.com/news/usa_eia_raises_henry_hub_price_forecast_for_2026_2027-15-jul-2026-184139-article/"
+    },
+    {
+      "category": "📦 Materias primas, combustibles & fletes",
+      "title": "El diésel de EE.UU. sube a US$5.31/gal en julio",
+      "source": "Work Truck / EIA",
+      "date": "27 jul 2026",
+      "url": "https://www.worktruckonline.com/news/july-diesel-trends-update-v2"
+    },
+    {
+      "category": "🏝️ Caribe & construcción",
+      "title": "Guyana: el boom de construcción impulsa un alza multimillonaria del crédito (Pres. Ali)",
+      "source": "Guyana Chronicle",
+      "date": "30 jun 2026",
+      "url": "https://guyanachronicle.com/2026/06/30/construction-boom-drives-multibillion-dollar-surge-in-credit-industry-president-ali/"
+    },
+    {
+      "category": "🏝️ Caribe & construcción",
+      "title": "La construcción de Rep. Dominicana crecería +2.4% en 2026 por IED y crédito",
+      "source": "GlobeNewswire",
+      "date": "8 abr 2026",
+      "url": "https://www.globenewswire.com/news-release/2026/04/08/3269995/0/en/dominican-republic-construction-industry-report-2026-output-to-grow-by-2-4-this-year-spurred-by-increased-fdi-rising-loans-and-higher-activity-forecasts-2027-2030.html",
+      "domicemImpact": true
+    },
+    {
+      "category": "🏝️ Caribe & construcción",
+      "title": "Portal CDBG-DR de Puerto Rico (reconstrucción de vivienda / R3)",
+      "source": "Recuperación PR",
+      "date": "",
+      "url": "https://recuperacion.pr.gov/en/cdbg-dr/"
+    },
+    {
+      "category": "⚖️ Regulación & macro",
+      "title": "Comienza el período definitivo del CBAM en la UE (compra de certificados)",
+      "source": "Comisión Europea",
+      "date": "2026",
+      "url": "https://trade.ec.europa.eu/access-to-markets/en/news/start-definitive-period-cbam-eu"
+    },
+    {
+      "category": "⚖️ Regulación & macro",
+      "title": "Taiwán impone antidumping al cemento y clinker vietnamita",
+      "source": "Vietnam News",
+      "date": "2026",
+      "url": "https://vietnamnews.vn/Economy/1722253/taiwan-imposes-anti-dumping-duties-on-vietnamese-cement-and-clinker-exports.html"
+    },
+    {
+      "category": "⚖️ Regulación & macro",
+      "title": "Filipinas ratifica derechos antidumping sobre el cemento vietnamita",
+      "source": "CemNet / ICR",
+      "date": "2026",
+      "url": "https://www.cemnet.com/News/story/181727/philippines-upholds-anti-dumping-duties-on-vietnamese-cement-imports.html"
+    },
+    {
+      "category": "⚖️ Regulación & macro",
+      "title": "Cemento Type IL (PLC): lo que hay que saber en 2026",
+      "source": "Concrete Mix USA",
+      "date": "2026",
+      "url": "https://concretemixusa.com/type-1l-cement-what-contractors-need-to-know-in-2026/"
+    },
+    {
+      "category": "EE.UU. — Importación/Exportación",
+      "title": "Perspectiva 'frágil' del mercado de cemento de EE.UU. para 2026 (demanda e importación)",
+      "source": "Argus Media",
+      "date": "2026",
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2758546-us-cement-market-2026-outlook-shaky",
+      "domicemImpact": false
+    },
+    {
+      "category": "EE.UU. — Importación/Exportación",
+      "title": "Aranceles en EE.UU. julio 2026: el cemento sigue libre de arancel 232 (acero/aluminio/cobre, no cemento)",
+      "source": "Global Cement",
+      "date": "jul 2026",
+      "url": "https://www.globalcement.com/news/analysis/21057-tariffs-in-july-2026",
+      "domicemImpact": false
+    },
+    {
+      "category": "EE.UU. — Importación/Exportación",
+      "title": "Titan America (productor de EE.UU., hub en Florida): 2T26 +9.6% y cierre de Keystone — termómetro de demanda e importación en el sureste",
+      "source": "Titan America IR",
+      "date": "28 jul 2026",
+      "url": "https://ir.titanamerica.com/press-releases/detail/106/titan-america-announces-second-quarter-2026-results",
+      "domicemImpact": false
+    }
+  ],
+  "marketMoves": [
+    {
+      "actor": "Rock Hard Cement / Mark Maloney",
+      "action": "import-license",
+      "market": "Jamaica",
+      "detail": "Obtuvo licencia por 6 meses para importar 100,000 t, una de las mayores cuotas entre 6 firmas autorizadas ante el faltante causado por la parada de Rockfort + demanda post-Melissa.",
+      "impact": "Un disruptor probado (venció a TCL en Barbados por aranceles CET) penetra un feudo de Cemex. Amenaza de precio a mediano plazo para productores locales; plantilla de opcionalidad de importación para Argos PR y Domicem.",
+      "url": "https://jamaica-gleaner.com/article/news/20260618/five-firms-cleared-import-cement"
+    },
+    {
+      "actor": "Gobierno de Jamaica + 6 importadores (Jamaica Logistics, Tank-Weld, Island Concrete, Gore, The Buying House, Rock Hard)",
+      "action": "import-license",
+      "market": "Jamaica",
+      "detail": "El Estado abrió una ventana de importación de 6 meses para 6 firmas ante el déficit de suministro, mientras Caribbean Cement (Cemex) subía producción +33%. No es un solo actor: es la apertura de todo un canal de importación.",
+      "impact": "Cuando el productor local no cubre la demanda, el mercado se abre a la importación en semanas. Plantilla de lo que puede pasar en cualquier isla con un choque de demanda — incluida PR.",
+      "url": "https://www.globalcement.com/news/20897-five-companies-receive-import-permits-from-jamaican-government"
+    },
+    {
+      "actor": "Grupo Estrella / Cemento PANAM",
+      "action": "new-capacity",
+      "market": "República Dominicana",
+      "detail": "El proyecto de clinker con Sinoma CBMI está cerca de completarse; el grupo ya compró Cemex Panamá (~US$200M), volviéndose un rival dominicano con alcance regional y capacidad de clinker propia.",
+      "impact": "Amenaza competitiva #1 para Domicem: un rival local pasa de moler a producir clinker y a operar fuera de RD. Riesgo de sobreoferta dominicana a mediano plazo.",
+      "url": "https://www.cemnet.com/News/story/179075/sinoma-cbmi-latin-america-close-to-completing-panam-project.html"
+    },
+    {
+      "actor": "Cementos Cibao",
+      "action": "new-capacity",
+      "market": "República Dominicana",
+      "detail": "Sumó línea de clinker + molienda, ampliando capacidad instalada dominicana justo cuando Domicem opera su Línea 2.",
+      "impact": "La capacidad dominicana sube por varios frentes a la vez: bien para el suministro, pero eleva el riesgo de sobreoferta y presión de precio en RD.",
+      "url": "https://www.cemnet.com/News/story/181347/grupo-argos-reports-lower-1q26-earnings-despite-stronger-cement-performance.html"
+    },
+    {
+      "actor": "Rock Hard Cement / Mark Maloney",
+      "action": "market-entry",
+      "market": "Barbados",
+      "detail": "Rock Hard ya opera como importador activo en Barbados tras años de pleito arancelario CET contra TCL (Cemex). Es la base desde la que Maloney escala por la cuenca caribeña.",
+      "impact": "Muestra el patrón pan-caribeño del disruptor: no es un evento de Jamaica aislado, es una estrategia de importación que salta de isla en isla. Vigilar próximos mercados (¿RD? ¿PR?).",
+      "url": "https://jamaica-gleaner.com/article/news/20260618/five-firms-cleared-import-cement"
+    },
+    {
+      "actor": "Mercado de Guyana (importadores)",
+      "action": "market-opportunity",
+      "market": "Guyana",
+      "detail": "Boom petrolero (~US$5B en infraestructura, PIB ~14%) con capacidad local de cemento mínima: la mayor demanda de importación no atendida de la región.",
+      "impact": "Espacio abierto para quien coloque tonelaje importado. Oportunidad de trading/terminal para Argos PR y Domicem; también imán para nuevos importadores disruptores.",
+      "url": "https://guyanachronicle.com/2026/06/30/construction-boom-drives-multibillion-dollar-surge-in-credit-industry-president-ali/"
+    }
+  ]
+}
