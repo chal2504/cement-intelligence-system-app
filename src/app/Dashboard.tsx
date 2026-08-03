@@ -38,6 +38,28 @@ export default function Dashboard({ allEditions, latestEdition }: DashboardProps
   const [showDomicemOnly, setShowDomicemOnly] = useState<boolean>(false);
   const [marketMoveFilter, setMarketMoveFilter] = useState<string>("all");
 
+  // Accordion state
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
+
+  const toggleSection = (id: string) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
+  const expandAll = () => {
+    const allExpanded: Record<string, boolean> = {};
+    currentEdition.sections.forEach((s) => {
+      allExpanded[s.id] = true;
+    });
+    setExpandedSections(allExpanded);
+  };
+
+  const collapseAll = () => {
+    setExpandedSections({});
+  };
+
   // Settings / Watchlist state
   const [brentThreshold, setBrentThreshold] = useState<number>(95);
   const [watchlist, setWatchlist] = useState<string[]>([
@@ -628,31 +650,112 @@ export default function Dashboard({ allEditions, latestEdition }: DashboardProps
               </div>
             </section>
 
+            {/* ACCORDION CONTROLS */}
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px", marginTop: "24px" }}>
+              <h4 style={{ margin: 0, fontWeight: "bold", fontSize: "15px", color: "var(--text-primary)" }}>
+                📝 Secciones detalladas (Análisis semanal)
+              </h4>
+              <div style={{ display: "flex", gap: "8px" }}>
+                <button
+                  onClick={expandAll}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "6px",
+                    border: "1px solid var(--border)",
+                    background: "var(--plane)",
+                    color: "var(--text-primary)",
+                    fontWeight: "bold",
+                    fontSize: "12px",
+                    cursor: "pointer",
+                  }}
+                >
+                  ▾ Expandir todo
+                </button>
+                <button
+                  onClick={collapseAll}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "6px",
+                    border: "1px solid var(--border)",
+                    background: "var(--plane)",
+                    color: "var(--text-primary)",
+                    fontWeight: "bold",
+                    fontSize: "12px",
+                    cursor: "pointer",
+                  }}
+                >
+                  ▸ Colapsar todo
+                </button>
+              </div>
+            </div>
+
             {/* NARRATIVE SECTIONS */}
-            {currentEdition.sections.map((sec) => (
-              <section key={sec.id} id={sec.id}>
-                <div className="sec-head">
-                  <span className="sec-num">{sec.num}</span>
-                  <h3 className="sec-title">{sec.title}</h3>
-                </div>
-                <div className="sec-sub">{sec.subtitle}</div>
-                <div className="card">
-                  <div className="grid2">
-                    {sec.subsections.map((sub, idx) => (
-                      <div key={idx} style={{ marginBottom: "12px" }}>
-                        <h4>{sub.title}</h4>
-                        <p>{sub.content}</p>
-                        {sub.why && (
-                          <div className="why">
-                            <b>Caribe:</b> {sub.why.replace(/Caribe:\s*/i, "")}
-                          </div>
-                        )}
-                      </div>
-                    ))}
+            {currentEdition.sections.map((sec) => {
+              const isExpanded = expandedSections[sec.id] === true;
+              return (
+                <section
+                  key={sec.id}
+                  id={sec.id}
+                  style={{
+                    borderBottom: "1px solid var(--border)",
+                    paddingBottom: "12px",
+                    marginBottom: "16px",
+                  }}
+                >
+                  <div
+                    onClick={() => toggleSection(sec.id)}
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      cursor: "pointer",
+                      padding: "10px 0",
+                      userSelect: "none",
+                    }}
+                  >
+                    <div className="sec-head" style={{ border: "none", margin: 0, padding: 0 }}>
+                      <span className="sec-num">{sec.num}</span>
+                      <h3 className="sec-title">{sec.title}</h3>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                      <span style={{ fontSize: "13px", color: "var(--muted)", fontWeight: "650" }}>
+                        {isExpanded ? "Ocultar" : "Mostrar"}
+                      </span>
+                      <span style={{ fontSize: "16px", color: "var(--muted)" }}>
+                        {isExpanded ? "▾" : "▸"}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </section>
-            ))}
+
+                  {/* Collapsable Content with smooth transition */}
+                  <div
+                    style={{
+                      maxHeight: isExpanded ? "3000px" : "0px",
+                      overflow: "hidden",
+                      transition: "max-height 0.35s ease-in-out, opacity 0.3s ease-in-out",
+                      opacity: isExpanded ? 1 : 0,
+                    }}
+                  >
+                    <div className="sec-sub" style={{ marginTop: "4px", marginBottom: "12px" }}>{sec.subtitle}</div>
+                    <div className="card">
+                      <div className="grid2">
+                        {sec.subsections.map((sub, idx) => (
+                          <div key={idx} style={{ marginBottom: "12px" }}>
+                            <h4>{sub.title}</h4>
+                            <p>{sub.content}</p>
+                            {sub.why && (
+                              <div className="why">
+                                <b>Caribe:</b> {sub.why.replace(/Caribe:\s*/i, "")}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              );
+            })}
 
             {/* MARKET MOVES & ALERTS */}
             <section id="salerts">
