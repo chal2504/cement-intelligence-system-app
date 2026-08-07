@@ -1,0 +1,11 @@
+{
+ "updated": "2026-08-07",
+ "updatedLabel": "7 ago 2026",
+ "indicators": [
+   {"label": "Brent", "value": "US$83.33/bbl", "delta": "▲ 1.0% dia", "sentiment": "adverse"},
+   {"label": "WTI", "value": "US$77.67/bbl", "delta": "▲ 0.5% dia", "sentiment": "adverse"},
+   {"label": "Flete BDI", "value": "~3,063", "delta": "▲ 4.3%", "sentiment": "adverse"},
+   {"label": "USD/DOP", "value": "58.18", "delta": "≈", "sentiment": "neutral"}
+ ],
+ "breaking": null
+}
