@@ -287,6 +287,59 @@ export default function Dashboard({ allEditions, latestEdition }: DashboardProps
     return marketMoveFilter === "all" || m.market.trim() === marketMoveFilter;
   });
 
+  const getDayOfYear = () => {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const diff = now.getTime() - start.getTime();
+    const oneDay = 1000 * 60 * 60 * 24;
+    return Math.floor(diff / oneDay);
+  };
+
+  const getTodayFormatted = () => {
+    const now = new Date();
+    return now.toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
+  };
+
+  const getDailyHighlight = () => {
+    const pool: any[] = [];
+    
+    // Add executiveSummary items
+    currentEdition.executiveSummary.forEach(item => {
+      pool.push({
+        type: "Resumen Ejecutivo",
+        tag: item.categoryLabel,
+        title: item.title,
+        description: item.description
+      });
+    });
+
+    // Add marketMoves items
+    currentEdition.marketMoves.forEach(item => {
+      pool.push({
+        type: "Movimiento de Mercado",
+        tag: item.market,
+        title: `${item.actor}: ${item.action}`,
+        description: `${item.detail} | Impacto: ${item.impact}`
+      });
+    });
+
+    // Add risks.critical items
+    currentEdition.risks.critical.forEach(item => {
+      pool.push({
+        type: "Riesgo Crítico",
+        tag: "Crítico",
+        title: item.title,
+        description: item.description
+      });
+    });
+
+    if (pool.length === 0) return null;
+
+    const dayOfYear = getDayOfYear();
+    const index = dayOfYear % pool.length;
+    return pool[index];
+  };
+
   return (
     <div>
       {/* ---------- HEADER ---------- */}
@@ -337,6 +390,121 @@ export default function Dashboard({ allEditions, latestEdition }: DashboardProps
 
       {/* ---------- WRAPPER & MAIN LAYOUT ---------- */}
       <div className="wrap">
+        {/* HOY / TODAY MODULE */}
+        <section style={{ marginBottom: "24px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            
+            {/* 1) Indicators strip */}
+            <div
+              style={{
+                display: "flex",
+                gap: "12px",
+                overflowX: "auto",
+                padding: "8px 0",
+                borderBottom: "1px solid var(--border)",
+                alignItems: "center"
+              }}
+              className="no-scrollbar"
+            >
+              <span style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", color: "var(--muted)", whiteSpace: "nowrap", marginRight: "8px" }}>
+                ⚡ HOY:
+              </span>
+              
+              {[
+                { key: "Brent", label: "Brent" },
+                { key: "WTI", label: "WTI" },
+                { key: "Panamax", label: "Panamax" },
+                { key: "COP", label: "USD/COP" },
+                { key: "Diésel", label: "Diésel EE.UU." }
+              ].map((indInfo) => {
+                const row = currentEdition.priceBoard.find(r => 
+                  r.indicator.toLowerCase().includes(indInfo.key.toLowerCase()) ||
+                  (indInfo.key === "Diésel" && r.indicator.toLowerCase().includes("diesel"))
+                );
+                if (!row) return null;
+                const sentimentClass = row.week.sentiment === "favorable" ? "up" : row.week.sentiment === "adverse" ? "down" : "flat";
+                return (
+                  <div
+                    key={indInfo.key}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "6px",
+                      background: "var(--plane)",
+                      padding: "6px 12px",
+                      borderRadius: "20px",
+                      border: "1px solid var(--border)",
+                      whiteSpace: "nowrap"
+                    }}
+                  >
+                    <span style={{ fontWeight: "bold", fontSize: "12.5px" }}>{indInfo.label}:</span>
+                    <span style={{ fontWeight: 650, fontSize: "12.5px", color: "var(--text-primary)" }}>{row.value}</span>
+                    <span className={sentimentClass} style={{ fontSize: "11px", fontWeight: "bold" }}>
+                      {row.week.label}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* 2) Daily highlight card */}
+            {(() => {
+              const highlight = getDailyHighlight();
+              if (!highlight) return null;
+              
+              let tagBg = "rgba(42, 120, 214, 0.1)";
+              let tagColor = "var(--s1)";
+              if (highlight.type === "Riesgo Crítico") {
+                tagBg = "rgba(208, 59, 59, 0.1)";
+                tagColor = "var(--critical)";
+              } else if (highlight.type === "Movimiento de Mercado") {
+                tagBg = "rgba(235, 104, 52, 0.1)";
+                tagColor = "var(--s2)";
+              }
+
+              return (
+                <div
+                  style={{
+                    background: "var(--card)",
+                    border: "1px solid var(--border)",
+                    borderRadius: "12px",
+                    padding: "16px",
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.02)"
+                  }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          fontWeight: "bold",
+                          textTransform: "uppercase",
+                          background: tagBg,
+                          color: tagColor,
+                          padding: "2px 8px",
+                          borderRadius: "4px"
+                        }}
+                      >
+                        {highlight.type} ({highlight.tag})
+                      </span>
+                    </div>
+                    <span style={{ fontSize: "11px", color: "var(--muted)" }}>
+                      🕒 Destacado del {getTodayFormatted()}
+                    </span>
+                  </div>
+                  <h4 style={{ margin: "0 0 6px 0", fontSize: "14.5px", fontWeight: "bold", color: "var(--text-primary)" }}>
+                    {highlight.title}
+                  </h4>
+                  <p style={{ margin: 0, fontSize: "13px", color: "var(--text-secondary)", lineHeight: "1.4" }}>
+                    {highlight.description}
+                  </p>
+                </div>
+              );
+            })()}
+
+          </div>
+        </section>
+
         {/* HERO SECTION */}
         <section className="hero">
           <div className="eyebrow">{currentEdition.hero.eyebrow}</div>
