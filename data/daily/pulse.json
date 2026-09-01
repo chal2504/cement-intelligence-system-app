@@ -1,11 +1,11 @@
 {
- "updated": "2026-08-21",
- "updatedLabel": "21 ago 2026",
+ "updated": "2026-09-01",
+ "updatedLabel": "1 sep 2026",
  "indicators": [
-   {"label": "Brent", "value": "US$93.86/bbl", "delta": "▲ 0.1% dia", "sentiment": "adverse"},
-   {"label": "WTI", "value": "US$87.10/bbl", "delta": "▲ 0.2% dia", "sentiment": "adverse"},
-   {"label": "Flete BDI", "value": "~2,791", "delta": "▲ 0.5% dia", "sentiment": "adverse"},
-   {"label": "USD/DOP", "value": "58.47", "delta": "▼ 0.8% dia", "sentiment": "neutral"}
+   {"label": "Brent", "value": "US$92.10/bbl", "delta": "▲ 1.8% dia", "sentiment": "adverse"},
+   {"label": "WTI", "value": "US$87.75/bbl", "delta": "▲ 2.3% dia", "sentiment": "adverse"},
+   {"label": "Flete BDI", "value": "~3,186", "delta": "▲ 2.5% dia", "sentiment": "adverse"},
+   {"label": "USD/DOP", "value": "58.87", "delta": "≈", "sentiment": "neutral"}
  ],
  "breaking": null
 }
