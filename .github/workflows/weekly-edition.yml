@@ -1,0 +1,41 @@
+name: Weekly Cement Edition
+on:
+  schedule:
+    - cron: "3 11 * * 1"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Regenerar aunque la edicion ya exista (para probar)"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install Anthropic SDK
+        run: pip install "anthropic>=0.40"
+      - name: Generate weekly edition
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          FORCE: ${{ inputs.force }}
+        run: python scripts/generate_edition.py
+      - name: Commit & push if a new edition was created
+        run: |
+          git config user.name "Cemento Robot (GitHub Actions)"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/editions/*.json
+          if git diff --cached --quiet; then
+            echo "No hay edicion nueva que publicar."
+          else
+            git commit -m "Edicion automatica $(date -u +%Y-%m-%d)"
+            git push
+          fi
