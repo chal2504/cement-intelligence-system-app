@@ -52,16 +52,16 @@ Devuelve UNICAMENTE un objeto JSON valido (sin ```, sin texto antes ni despues) 
 {{
  "meta": {{"edition": {edition}, "week": "{week}", "dates": "{week}", "timestamp": "{timestamp}"}},
  "hero": {{"eyebrow": "Informe de inteligencia - No es noticias, es interpretacion", "title": "titular del tema dominante de la semana", "lede": "2-4 frases", "stamp": "Datos al ... Las cifras marcadas EST son estimaciones trianguladas, no precios cotizados. Metodologia y fuentes al pie."}},
- "executiveSummary": [ {{"title": "...", "category": "cost|demand|competition|regulation|opportunity", "categoryLabel": "Costo|Demanda|Competencia|Regulacion|Oportunidad", "description": "por que importa (2o/3er orden)"}} ] (~10 eventos),
+ "executiveSummary": [ {{"title": "...", "category": "cost|demand|competition|regulation|opportunity", "categoryLabel": "Costo|Demanda|Competencia|Regulacion|Oportunidad", "description": "por que importa, 1-2 frases"}} ] (8 eventos),
  "risks": {{"critical": [{{"title": "...", "description": "..."}}], "emerging": [ ... ], "opportunities": [ ... ]}},
  "priceBoard": [ {{"group": "Clinker & cemento|Combustibles|SCM (materiales cementantes suplementarios)|Fletes maritimos|Macro & divisas", "indicator": "...", "value": "US$89/bbl", "numeric": 89.0, "est": false, "week": {{"dir": "up|down|flat|nd", "sentiment": "favorable|adverse|neutral", "label": "▲ 2%|▼|≈|n/d"}}, "month": {{...}}, "year": {{...}}, "reference": "fuente + fecha"}} ] (LISTA PLANA; cada fila lleva su "group". Indicadores minimos: Clinker FOB Turquia, Cemento granel FOB Turquia, Clinker CIF Caribe(EST), Petcoke FOB USGC(EST), Carbon API2, Gas Henry Hub, Diesel EE.UU., Fly ash(EST), Escoria GGBFS(EST), BDI, Handysize, Supramax, Panamax, Brent, WTI, USD/TRY, USD/COP, USD/DOP),
  "landedCostChart": {{"origins": [ {{"origin": "Colombia", "fob": 54, "freight": 14, "total": 68}}, {{"origin": "Egipto", ...}}, {{"origin": "Argelia", ...}}, {{"origin": "Turquia", ...}}, {{"origin": "Vietnam", ...}} ]}},
  "boardBox": {{"argosPR": "...", "domicem": "...", "questions": ["...", "...", "..."]}},
- "sections": [ {{"id": "s2", "num": 2, "title": "Materias primas", "subtitle": "...", "subsections": [ {{"title": "Clinker", "content": "...", "why": "Caribe: ..."}} ]}} ] (SOLO s2..s13, num entero 2..13, 12 secciones: Materias primas, Combustibles, Fletes maritimos, Importaciones, SCM, Competencia, Caribe, Construccion, Regulacion, Finanzas, ESG, Tecnologia. Cada seccion 4-8 subsecciones {{title,content,why}}),
- "news": [ {{"category": "🏢 Empresas & competencia|📦 Materias primas, combustibles & fletes|🏝️ Caribe & construccion|⚖️ Regulacion & macro|EE.UU. — Importacion/Exportacion", "title": "...", "source": "...", "date": "...", "url": "https://...", "domicemImpact": true}} ] (~15, usa EXACTAMENTE una de esas 5 etiquetas; enlaces reales verificados; domicemImpact=true si afecta directo a RD/Domicem),
- "marketMoves": [ {{"actor": "...", "action": "import-license|market-entry|new-capacity|tariff-dispute|market-opportunity", "market": "Jamaica|Republica Dominicana|Puerto Rico|Barbados|Guyana|...", "detail": "...", "impact": "lectura para Argos PR / Domicem", "url": "https://..."}} ] (varios, por todo el Caribe)
+ "sections": [ {{"id": "s2", "num": 2, "title": "Materias primas", "subtitle": "...", "subsections": [ {{"title": "Clinker", "content": "...", "why": "Caribe: ..."}} ]}} ] (SOLO s2..s13, num entero 2..13, 12 secciones: Materias primas, Combustibles, Fletes maritimos, Importaciones, SCM, Competencia, Caribe, Construccion, Regulacion, Finanzas, ESG, Tecnologia. cada seccion SOLO 3 subsecciones breves {{title,content,why}} con content de 1-2 frases),
+ "news": [ {{"category": "🏢 Empresas & competencia|📦 Materias primas, combustibles & fletes|🏝️ Caribe & construccion|⚖️ Regulacion & macro|EE.UU. — Importacion/Exportacion", "title": "...", "source": "...", "date": "...", "url": "https://...", "domicemImpact": true}} ] (8 noticias, usa EXACTAMENTE una de esas 5 etiquetas; enlaces reales verificados; domicemImpact=true si afecta directo a RD/Domicem),
+ "marketMoves": [ {{"actor": "...", "action": "import-license|market-entry|new-capacity|tariff-dispute|market-opportunity", "market": "Jamaica|Republica Dominicana|Puerto Rico|Barbados|Guyana|...", "detail": "...", "impact": "lectura para Argos PR / Domicem", "url": "https://..."}} ] (5 movimientos, por todo el Caribe)
 }}
-Responde SOLO con el JSON."""
+SE CONCISO: 1-2 frases por campo, sin relleno. CRITICO: el JSON debe quedar COMPLETO y CERRADO con TODAS las claves hasta marketMoves al final; prioriza terminar toda la estructura sobre escribir textos largos. Responde SOLO con el JSON."""
 
 # ---------- 3. Llamada a la API con busqueda web ----------
 client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
@@ -70,7 +70,7 @@ MODEL = os.environ.get("CLAUDE_MODEL") or "claude-sonnet-4-5"
 with client.messages.stream(
     model=MODEL,
     max_tokens=32000,
-    tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 8}],
+    tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 6}],
     messages=[{"role": "user", "content": PROMPT}],
 ) as stream:
     resp = stream.get_final_message()
@@ -96,10 +96,19 @@ data = extract_json(text)
 # Forzar meta correcta (deterministica), pase lo que pase
 data["meta"] = {"edition": edition, "week": week, "dates": week, "timestamp": timestamp}
 
-# Chequeos minimos de estructura
-for key in ("hero", "executiveSummary", "priceBoard", "risks", "boardBox", "sections", "news", "marketMoves"):
-    if key not in data:
-        raise ValueError(f"Falta la clave requerida: {key}")
+# Red de seguridad: rellenar cualquier clave que falte (si el modelo se corto), sin caerse
+data.setdefault("hero", {"eyebrow": "", "title": f"Edicion #{edition}", "lede": "", "stamp": ""})
+data.setdefault("executiveSummary", [])
+data.setdefault("risks", {"critical": [], "emerging": [], "opportunities": []})
+data.setdefault("priceBoard", [])
+data.setdefault("landedCostChart", {"origins": []})
+data.setdefault("boardBox", {"argosPR": "", "domicem": "", "questions": []})
+data.setdefault("sections", [])
+data.setdefault("news", [])
+data.setdefault("marketMoves", [])
+# minimo indispensable para que valga la pena publicar
+if not data.get("priceBoard") and not data.get("executiveSummary"):
+    raise ValueError("La respuesta no trae contenido util (ni priceBoard ni executiveSummary)")
 
 with open(outpath, "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
