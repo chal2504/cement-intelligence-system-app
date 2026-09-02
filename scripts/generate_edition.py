@@ -5,8 +5,15 @@ Investiga con la API de Claude (busqueda web) y escribe data/editions/edicion-{N
 con el esquema exacto que consume la app. Luego el workflow hace commit + push,
 y Vercel republica sola. No depende de la nube de Cowork.
 """
-import os, sys, re, json, datetime
+import os, sys, re, json, datetime, subprocess
 from anthropic import Anthropic
+
+# Reparador de JSON tolerante (por si el modelo produce un JSON con un desliz de formato)
+try:
+    from json_repair import repair_json
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "json-repair"])
+    from json_repair import repair_json
 
 # ---------- 1. Fecha y numero de edicion ----------
 today = datetime.date.today()
@@ -62,8 +69,8 @@ MODEL = os.environ.get("CLAUDE_MODEL") or "claude-sonnet-4-5"
 
 with client.messages.stream(
     model=MODEL,
-    max_tokens=24000,
-    tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 10}],
+    max_tokens=32000,
+    tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 8}],
     messages=[{"role": "user", "content": PROMPT}],
 ) as stream:
     resp = stream.get_final_message()
@@ -77,9 +84,12 @@ def extract_json(s):
         s = re.sub(r"^```[a-zA-Z]*\n?", "", s).rstrip("`").strip()
     start = s.find("{")
     end = s.rfind("}")
-    if start == -1 or end == -1:
-        raise ValueError("No se encontro JSON en la respuesta")
-    return json.loads(s[start:end+1])
+    frag = s[start:end+1] if (start != -1 and end != -1) else s
+    try:
+        return json.loads(frag)
+    except Exception:
+        # el modelo dejo un desliz de formato o se corto: reparar
+        return repair_json(frag, return_objects=True)
 
 data = extract_json(text)
 
