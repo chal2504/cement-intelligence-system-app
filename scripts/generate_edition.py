@@ -60,12 +60,13 @@ Responde SOLO con el JSON."""
 client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 MODEL = os.environ.get("CLAUDE_MODEL") or "claude-sonnet-4-5"
 
-resp = client.messages.create(
+with client.messages.stream(
     model=MODEL,
     max_tokens=24000,
     tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 10}],
     messages=[{"role": "user", "content": PROMPT}],
-)
+) as stream:
+    resp = stream.get_final_message()
 
 text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
 
