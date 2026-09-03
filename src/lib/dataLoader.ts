@@ -135,3 +135,38 @@ export function getEditionByNumber(num: number): EditionData | null {
   const editions = getAllEditions();
   return editions.find((e) => e.meta.edition === num) || null;
 }
+
+// ---------- Pulso diario (data/daily/pulse.json) ----------
+export interface DailyPulseIndicator {
+  label: string;
+  value: string;
+  delta: string;
+  sentiment: "favorable" | "adverse" | "neutral";
+}
+
+export interface DailyPulseBreaking {
+  title: string;
+  detail: string;
+  url: string;
+}
+
+export interface DailyPulse {
+  updated: string;
+  updatedLabel: string;
+  indicators: DailyPulseIndicator[];
+  breaking: DailyPulseBreaking | null;
+}
+
+export function getDailyPulse(): DailyPulse | null {
+  const pulsePath = path.join(process.cwd(), "data", "daily", "pulse.json");
+  if (!fs.existsSync(pulsePath)) {
+    return null;
+  }
+  try {
+    const content = fs.readFileSync(pulsePath, "utf-8");
+    return JSON.parse(content) as DailyPulse;
+  } catch (err) {
+    console.error("Error reading or parsing pulse.json:", err);
+    return null;
+  }
+}

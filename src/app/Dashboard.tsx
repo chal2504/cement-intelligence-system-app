@@ -13,14 +13,15 @@ import {
   BarChart,
   Bar,
 } from "recharts";
-import { EditionData, PriceRow, RiskItem, NewsItem, MarketMovesItem } from "@/lib/dataLoader";
+import { EditionData, PriceRow, RiskItem, NewsItem, MarketMovesItem, DailyPulse } from "@/lib/dataLoader";
 
 interface DashboardProps {
   allEditions: EditionData[];
   latestEdition: EditionData;
+  dailyPulse?: DailyPulse | null;
 }
 
-export default function Dashboard({ allEditions, latestEdition }: DashboardProps) {
+export default function Dashboard({ allEditions, latestEdition, dailyPulse }: DashboardProps) {
   // 1. Core States
   const [activeEditionNum, setActiveEditionNum] = useState<number>(latestEdition.meta.edition);
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -394,7 +395,7 @@ export default function Dashboard({ allEditions, latestEdition }: DashboardProps
         <section style={{ marginBottom: "24px" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             
-            {/* 1) Indicators strip */}
+            {/* 1) Indicators strip — PULSO DIARIO (data/daily/pulse.json), fresco cada dia habil */}
             <div
               style={{
                 display: "flex",
@@ -407,45 +408,103 @@ export default function Dashboard({ allEditions, latestEdition }: DashboardProps
               className="no-scrollbar"
             >
               <span style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", color: "var(--muted)", whiteSpace: "nowrap", marginRight: "8px" }}>
-                ⚡ HOY:
+                ⚡ PULSO DE HOY{dailyPulse?.updatedLabel ? ` · ${dailyPulse.updatedLabel}` : ""}:
               </span>
-              
-              {[
-                { key: "Brent", label: "Brent" },
-                { key: "WTI", label: "WTI" },
-                { key: "Panamax", label: "Panamax" },
-                { key: "COP", label: "USD/COP" },
-                { key: "Diésel", label: "Diésel EE.UU." }
-              ].map((indInfo) => {
-                const row = currentEdition.priceBoard.find(r => 
-                  r.indicator.toLowerCase().includes(indInfo.key.toLowerCase()) ||
-                  (indInfo.key === "Diésel" && r.indicator.toLowerCase().includes("diesel"))
-                );
-                if (!row) return null;
-                const sentimentClass = row.week.sentiment === "favorable" ? "up" : row.week.sentiment === "adverse" ? "down" : "flat";
-                return (
-                  <div
-                    key={indInfo.key}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "6px",
-                      background: "var(--plane)",
-                      padding: "6px 12px",
-                      borderRadius: "20px",
-                      border: "1px solid var(--border)",
-                      whiteSpace: "nowrap"
-                    }}
-                  >
-                    <span style={{ fontWeight: "bold", fontSize: "12.5px" }}>{indInfo.label}:</span>
-                    <span style={{ fontWeight: 650, fontSize: "12.5px", color: "var(--text-primary)" }}>{row.value}</span>
-                    <span className={sentimentClass} style={{ fontSize: "11px", fontWeight: "bold" }}>
-                      {row.week.label}
-                    </span>
-                  </div>
-                );
-              })}
+
+              {dailyPulse && dailyPulse.indicators && dailyPulse.indicators.length > 0 ? (
+                dailyPulse.indicators.map((ind) => {
+                  const sentimentClass = ind.sentiment === "favorable" ? "up" : ind.sentiment === "adverse" ? "down" : "flat";
+                  return (
+                    <div
+                      key={ind.label}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "6px",
+                        background: "var(--plane)",
+                        padding: "6px 12px",
+                        borderRadius: "20px",
+                        border: "1px solid var(--border)",
+                        whiteSpace: "nowrap"
+                      }}
+                    >
+                      <span style={{ fontWeight: "bold", fontSize: "12.5px" }}>{ind.label}:</span>
+                      <span style={{ fontWeight: 650, fontSize: "12.5px", color: "var(--text-primary)" }}>{ind.value}</span>
+                      <span className={sentimentClass} style={{ fontSize: "11px", fontWeight: "bold" }}>
+                        {ind.delta}
+                      </span>
+                    </div>
+                  );
+                })
+              ) : (
+                // Respaldo: si aun no hay pulso diario, muestra los precios de la edicion semanal
+                [
+                  { key: "Brent", label: "Brent" },
+                  { key: "WTI", label: "WTI" },
+                  { key: "Panamax", label: "Panamax" },
+                  { key: "COP", label: "USD/COP" },
+                  { key: "Diésel", label: "Diésel EE.UU." }
+                ].map((indInfo) => {
+                  const row = currentEdition.priceBoard.find(r =>
+                    r.indicator.toLowerCase().includes(indInfo.key.toLowerCase()) ||
+                    (indInfo.key === "Diésel" && r.indicator.toLowerCase().includes("diesel"))
+                  );
+                  if (!row) return null;
+                  const sentimentClass = row.week.sentiment === "favorable" ? "up" : row.week.sentiment === "adverse" ? "down" : "flat";
+                  return (
+                    <div
+                      key={indInfo.key}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "6px",
+                        background: "var(--plane)",
+                        padding: "6px 12px",
+                        borderRadius: "20px",
+                        border: "1px solid var(--border)",
+                        whiteSpace: "nowrap"
+                      }}
+                    >
+                      <span style={{ fontWeight: "bold", fontSize: "12.5px" }}>{indInfo.label}:</span>
+                      <span style={{ fontWeight: 650, fontSize: "12.5px", color: "var(--text-primary)" }}>{row.value}</span>
+                      <span className={sentimentClass} style={{ fontSize: "11px", fontWeight: "bold" }}>
+                        {row.week.label}
+                      </span>
+                    </div>
+                  );
+                })
+              )}
             </div>
+
+            {/* 1b) Alerta del dia (pulse.breaking) — solo si hay algo extraordinario hoy */}
+            {dailyPulse?.breaking && (
+              <a
+                href={dailyPulse.breaking.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "block",
+                  textDecoration: "none",
+                  background: "rgba(208, 59, 59, 0.08)",
+                  border: "1px solid rgba(208, 59, 59, 0.25)",
+                  borderRadius: "10px",
+                  padding: "12px 14px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
+                  <span style={{ fontSize: "16px" }}>🚨</span>
+                  <span style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--critical)" }}>
+                    Alerta de hoy
+                  </span>
+                </div>
+                <h4 style={{ margin: "0 0 4px 0", fontSize: "14px", fontWeight: "bold", color: "var(--text-primary)" }}>
+                  {dailyPulse.breaking.title}
+                </h4>
+                <p style={{ margin: 0, fontSize: "12.5px", color: "var(--text-secondary)", lineHeight: "1.4" }}>
+                  {dailyPulse.breaking.detail}
+                </p>
+              </a>
+            )}
 
             {/* 2) Daily highlight card */}
             {(() => {

@@ -1,5 +1,9 @@
-import { getAllEditions, getLatestEdition } from "@/lib/dataLoader";
+import { getAllEditions, getLatestEdition, getDailyPulse } from "@/lib/dataLoader";
 import Dashboard from "./Dashboard";
+
+// La app se reconstruye en cada push (edicion semanal o pulso diario),
+// asi que el pulso mas reciente se lee al construir.
+export const dynamic = "force-static";
 
 export const metadata = {
   title: "Cement Intelligence System · Edición semanal",
@@ -9,6 +13,7 @@ export const metadata = {
 export default function Home() {
   const allEditions = getAllEditions();
   const latestEdition = getLatestEdition();
+  const dailyPulse = getDailyPulse();
 
   if (!latestEdition) {
     return (
@@ -19,5 +24,5 @@ export default function Home() {
     );
   }
 
-  return <Dashboard allEditions={allEditions} latestEdition={latestEdition} />;
+  return <Dashboard allEditions={allEditions} latestEdition={latestEdition} dailyPulse={dailyPulse} />;
 }
