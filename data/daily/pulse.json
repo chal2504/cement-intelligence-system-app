@@ -1,11 +1,15 @@
 {
- "updated": "2026-09-01",
- "updatedLabel": "1 sep 2026",
+ "updated": "2026-09-03",
+ "updatedLabel": "3 sep 2026",
  "indicators": [
-   {"label": "Brent", "value": "US$92.10/bbl", "delta": "▲ 1.8% dia", "sentiment": "adverse"},
-   {"label": "WTI", "value": "US$87.75/bbl", "delta": "▲ 2.3% dia", "sentiment": "adverse"},
-   {"label": "Flete BDI", "value": "~3,186", "delta": "▲ 2.5% dia", "sentiment": "adverse"},
-   {"label": "USD/DOP", "value": "58.87", "delta": "≈", "sentiment": "neutral"}
+   {"label": "Brent", "value": "US$97.23/bbl", "delta": "▲ 1.7% dia", "sentiment": "adverse"},
+   {"label": "WTI", "value": "US$92.60/bbl", "delta": "▲ 1.8% dia", "sentiment": "adverse"},
+   {"label": "Flete BDI", "value": "~3,331", "delta": "▲ 5.5% dia", "sentiment": "adverse"},
+   {"label": "USD/DOP", "value": "58.88", "delta": "≈", "sentiment": "neutral"}
  ],
- "breaking": null
+ "breaking": {
+   "title": "Flete BDI salta 5.5% a su maximo desde diciembre 2023",
+   "detail": "El Baltic Dry Index subio 174 puntos hasta 3,331 el 2 sep 2026, su nivel mas alto en casi dos anos. Encarece el flete maritimo de importacion, un costo clave tanto para Argos en Puerto Rico como para Domicem en Republica Dominicana.",
+   "url": "https://www.hellenicshippingnews.com/baltic-dry-index-climbs-to-3331-up-174-points/"
+ }
 }
