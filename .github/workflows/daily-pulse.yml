@@ -1,7 +1,9 @@
 name: Daily Cement Pulse
 on:
   schedule:
-    - cron: "12 11 * * 1-5"
+    - cron: "17 11 * * 1-5"
+    - cron: "17 13 * * 1-5"
+    - cron: "17 15 * * 1-5"
   workflow_dispatch:
 permissions:
   contents: write
