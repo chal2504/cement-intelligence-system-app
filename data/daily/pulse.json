@@ -1,18 +1,18 @@
 {
- "updated": "2026-09-03",
- "updatedLabel": "3 sep 2026",
+ "updated": "2026-09-04",
+ "updatedLabel": "4 sep 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$95.04/bbl",
-   "delta": "▼ 0.6% día",
+   "value": "US$95.23/bbl",
+   "delta": "▼ 0.3% día",
    "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$90.63/bbl",
-   "delta": "▼ 0.4% día",
-   "sentiment": "favorable"
+   "value": "US$90.72/bbl",
+   "delta": "▲ 0.6% día",
+   "sentiment": "adverso"
   },
   {
    "label": "Flete BDI",
@@ -28,8 +28,8 @@
   }
  ],
  "breaking": {
-  "title": "Caribbean Cement retoma exportaciones regionales",
-  "detail": "Caribbean Cement (Cemex Jamaica) reanuda exportaciones a Cayman y Bahamas tras aumentar capacidad de producción en su planta de Kingston. La firma suspendió envíos en abril-mayo 2026 por escasez local.",
+  "title": "Caribbean Cement reanuda exportaciones regionales",
+  "detail": "Cemex a través de Caribbean Cement reinicia exportaciones a Cayman y Bahamas en septiembre tras aumentar capacidad de producción. Competencia regional se intensifica.",
   "url": "https://www.cemnet.com/News/story/181870/caribbean-cement-eyes-september-export-restart.html"
  }
 }
