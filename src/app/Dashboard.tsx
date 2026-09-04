@@ -30,6 +30,8 @@ export default function Dashboard({ allEditions, latestEdition, dailyPulse }: Da
   const [newsCategoryFilter, setNewsCategoryFilter] = useState<string>("all");
   const [newsSearchQuery, setNewsSearchQuery] = useState<string>("");
   const [isMounted, setIsMounted] = useState(false);
+  // Fecha local del visitante (para saber si el pulso es de HOY o es el ultimo disponible)
+  const [todayISO, setTodayISO] = useState<string | null>(null);
 
   // Advanced News states
   const [searchAllEditions, setSearchAllEditions] = useState<boolean>(false);
@@ -72,6 +74,11 @@ export default function Dashboard({ allEditions, latestEdition, dailyPulse }: Da
   // Set mounted
   useEffect(() => {
     setIsMounted(true);
+    // Fecha local de hoy en formato AAAA-MM-DD (zona horaria del visitante)
+    const d = new Date();
+    setTodayISO(
+      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`
+    );
     // Load theme from localstorage if exists
     const storedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
     if (storedTheme) {
@@ -408,7 +415,11 @@ export default function Dashboard({ allEditions, latestEdition, dailyPulse }: Da
               className="no-scrollbar"
             >
               <span style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", color: "var(--muted)", whiteSpace: "nowrap", marginRight: "8px" }}>
-                ⚡ PULSO DE HOY{dailyPulse?.updatedLabel ? ` · ${dailyPulse.updatedLabel}` : ""}:
+                {(() => {
+                  const esHoy = todayISO !== null && dailyPulse?.updated === todayISO;
+                  const prefijo = esHoy ? "⚡ PULSO DE HOY" : "⚡ ÚLTIMO PULSO";
+                  return `${prefijo}${dailyPulse?.updatedLabel ? ` · ${dailyPulse.updatedLabel}` : ""}:`;
+                })()}
               </span>
 
               {dailyPulse && dailyPulse.indicators && dailyPulse.indicators.length > 0 ? (
