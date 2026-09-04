@@ -10,9 +10,9 @@
   },
   {
    "label": "WTI",
-   "value": "US$90.72/bbl",
-   "delta": "▲ 0.6% día",
-   "sentiment": "adverso"
+   "value": "US$91.07/bbl",
+   "delta": "▼ 0.3% día",
+   "sentiment": "favorable"
   },
   {
    "label": "Flete BDI",
@@ -27,9 +27,5 @@
    "sentiment": "neutral"
   }
  ],
- "breaking": {
-  "title": "Caribbean Cement reanuda exportaciones regionales",
-  "detail": "Cemex a través de Caribbean Cement reinicia exportaciones a Cayman y Bahamas en septiembre tras aumentar capacidad de producción. Competencia regional se intensifica.",
-  "url": "https://www.cemnet.com/News/story/181870/caribbean-cement-eyes-september-export-restart.html"
- }
+ "breaking": null
 }
