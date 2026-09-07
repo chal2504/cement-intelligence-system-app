@@ -1,0 +1,945 @@
+{
+  "meta": {
+    "edition": 8,
+    "week": "7-13 sep 2026",
+    "dates": "7-13 sep 2026",
+    "timestamp": "2026-09-07"
+  },
+  "hero": {
+    "eyebrow": "Informe de inteligencia - No es noticias, es interpretación",
+    "title": "Presión de costos energéticos desafía márgenes mientras demanda caribeña muestra resiliencia selectiva",
+    "lede": "Los precios del crudo mantienen volatilidad por tensiones geopolíticas y recortes de producción, impactando combustibles directos y fletes. La demanda en República Dominicana y Jamaica sostiene importaciones activas de clinker turco, mientras Puerto Rico enfrenta mayor competencia de cemento granel. Las oportunidades de exportación hacia EE.UU. permanecen limitadas por barreras arancelarias y oversupply regional.",
+    "stamp": "Datos al 7 sep 2026. Las cifras marcadas EST son estimaciones trianguladas, no precios cotizados. Metodología y fuentes al pie."
+  },
+  "executiveSummary": [
+    {
+      "title": "Crudo supera US$70/bbl por recortes OPEC+",
+      "category": "cost",
+      "categoryLabel": "Costo",
+      "description": "Brent y WTI avanzan +3-4% semanal por extensión de recortes saudíes y tensiones Medio Oriente, encareciendo diesel y combustibles alternativos."
+    },
+    {
+      "title": "Fletes Panamax repuntan +8% semanal",
+      "category": "cost",
+      "categoryLabel": "Costo",
+      "description": "Demanda china de granos y congestión en Panamá impulsan tarifas Panamax a US$14,200/día, presionando costos de importación de clinker desde Turquía."
+    },
+    {
+      "title": "Clinker FOB Turquía estable en US$48-50/t",
+      "category": "cost",
+      "categoryLabel": "Costo",
+      "description": "Productores turcos mantienen precios firmes ante demanda sostenida del Caribe y África occidental, con lead times de 4-5 semanas."
+    },
+    {
+      "title": "Jamaica licita terminal cementera en Kingston",
+      "category": "competition",
+      "categoryLabel": "Competencia",
+      "description": "Port Authority of Jamaica busca operador para nueva terminal de importación, señalando apertura adicional del mercado a cemento granel extranjero."
+    },
+    {
+      "title": "República Dominicana aprueba 18 proyectos turísticos",
+      "category": "demand",
+      "categoryLabel": "Demanda",
+      "description": "Ministerio de Turismo RD autoriza inversiones por US$420M en Punta Cana y Puerto Plata, sosteniendo demanda de cemento para Q4 2026."
+    },
+    {
+      "title": "Guyana anuncia licitación carretera Georgetown-Lethem",
+      "category": "opportunity",
+      "categoryLabel": "Oportunidad",
+      "description": "Proyecto de US$650M financiado por petrodólares demandará ~200,000 t cemento; mercado abierto a importaciones ante capacidad local limitada."
+    },
+    {
+      "title": "CBAM fase transitoria exige reporte carbono embebido",
+      "category": "regulation",
+      "categoryLabel": "Regulación",
+      "description": "Exportadores caribeños hacia Europa deben reportar emisiones de clinker/cemento desde Q4 2026, anticipando futuros ajustes fronterizos de carbono."
+    },
+    {
+      "title": "Titan America expande blending facility en Tampa",
+      "category": "competition",
+      "categoryLabel": "Competencia",
+      "description": "Inversión US$12M en molienda y mezcla SCM para atender mercado Florida con cementos Portland-limestone, compitiendo con importaciones caribeñas."
+    }
+  ],
+  "risks": {
+    "critical": [
+      {
+        "title": "Escalada de fletes por congestión Panamá",
+        "description": "Restricciones de calado en Canal de Panamá empujan rutas alternativas más largas, elevando fletes Panamax/Supramax +10-15% vs. julio; riesgo de sostenibilidad si sequía persiste en Q4."
+      },
+      {
+        "title": "Oversupply cemento en Puerto Rico",
+        "description": "Importaciones de granel desde Colombia y Egipto saturan mercado PR, presionando precios locales -5% interanual y márgenes de Argos PR."
+      }
+    ],
+    "emerging": [
+      {
+        "title": "Volatilidad cambiaria TRY y COP",
+        "description": "Depreciación lira turca (USD/TRY 34.2) y peso colombiano (USD/COP 4,150) favorece competitividad exportadora pero introduce incertidumbre en contratos spot."
+      },
+      {
+        "title": "Restricciones exportación clinker Vietnam",
+        "description": "Gobierno vietnamita evalúa cuotas de exportación para priorizar consumo doméstico, pudiendo desplazar oferta hacia orígenes alternativos y elevar precios Caribe."
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "Boom infraestructura Guyana",
+        "description": "Inversión petrolera genera demanda explosiva de cemento (>300,000 t/año proyectado); mercado abierto sin producción local suficiente, ideal para Domicem vía exportación directa o joint venture."
+      },
+      {
+        "title": "Escasez fly ash impulsa demanda escoria",
+        "description": "Cierre acelerado de plantas carbón en EE.UU. reduce oferta de ceniza volante, elevando precios escoria GGBFS +12% anual; oportunidad para productores SCM caribeños con sourcing asiático."
+      },
+      {
+        "title": "Financiamiento BID para Haití",
+        "description": "BID aprueba US$200M para reconstrucción post-huracanes en Haití; demanda potencial 150,000 t cemento si seguridad permite ejecución en 2027."
+      }
+    ]
+  },
+  "priceBoard": [
+    {
+      "group": "Clinker & cemento",
+      "indicator": "Clinker FOB Turquía",
+      "value": "US$49/t",
+      "numeric": 49.0,
+      "est": false,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 2%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 8%"
+      },
+      "reference": "S&P Global Platts, 6 sep 2026"
+    },
+    {
+      "group": "Clinker & cemento",
+      "indicator": "Cemento granel FOB Turquía",
+      "value": "US$58/t",
+      "numeric": 58.0,
+      "est": false,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 3%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 7%"
+      },
+      "reference": "Argus Media, 5 sep 2026"
+    },
+    {
+      "group": "Clinker & cemento",
+      "indicator": "Clinker CIF Caribe",
+      "value": "US$67/t",
+      "numeric": 67.0,
+      "est": true,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 3%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 5%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 12%"
+      },
+      "reference": "EST (FOB Turquía + flete Panamax), 7 sep 2026"
+    },
+    {
+      "group": "Combustibles",
+      "indicator": "Petcoke FOB USGC",
+      "value": "US$82/t",
+      "numeric": 82.0,
+      "est": true,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 2%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 4%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 9%"
+      },
+      "reference": "EST (índice Argus jul-ago), 7 sep 2026"
+    },
+    {
+      "group": "Combustibles",
+      "indicator": "Carbón API2 (Europa)",
+      "value": "US$105/t",
+      "numeric": 105.0,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 3%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 6%"
+      },
+      "year": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼ 8%"
+      },
+      "reference": "ICE Futures Europe, 6 sep 2026"
+    },
+    {
+      "group": "Combustibles",
+      "indicator": "Gas natural Henry Hub",
+      "value": "US$2.35/MMBtu",
+      "numeric": 2.35,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 4%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 7%"
+      },
+      "year": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼ 12%"
+      },
+      "reference": "EIA, 6 sep 2026"
+    },
+    {
+      "group": "Combustibles",
+      "indicator": "Diesel retail EE.UU.",
+      "value": "US$3.58/gal",
+      "numeric": 3.58,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 2%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 5%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 6%"
+      },
+      "reference": "EIA, 2 sep 2026"
+    },
+    {
+      "group": "SCM (materiales cementantes suplementarios)",
+      "indicator": "Fly ash (ceniza volante)",
+      "value": "US$48/t",
+      "numeric": 48.0,
+      "est": true,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 4%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 15%"
+      },
+      "reference": "EST (índice trimestral Q2), 7 sep 2026"
+    },
+    {
+      "group": "SCM (materiales cementantes suplementarios)",
+      "indicator": "Escoria GGBFS",
+      "value": "US$72/t",
+      "numeric": 72.0,
+      "est": true,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 3%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 12%"
+      },
+      "reference": "EST (índice trimestral Q2), 7 sep 2026"
+    },
+    {
+      "group": "Fletes marítimos",
+      "indicator": "Baltic Dry Index (BDI)",
+      "value": "1,685 pts",
+      "numeric": 1685.0,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 4%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 8%"
+      },
+      "year": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼ 6%"
+      },
+      "reference": "Baltic Exchange, 6 sep 2026"
+    },
+    {
+      "group": "Fletes marítimos",
+      "indicator": "Handysize (BHSI)",
+      "value": "US$9,800/día",
+      "numeric": 9800.0,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 3%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 7%"
+      },
+      "year": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼ 9%"
+      },
+      "reference": "Baltic Exchange, 6 sep 2026"
+    },
+    {
+      "group": "Fletes marítimos",
+      "indicator": "Supramax (BSI)",
+      "value": "US$11,500/día",
+      "numeric": 11500.0,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 5%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 9%"
+      },
+      "year": {
+        "dir": "down",
+        "sentiment": "favorable",
+        "label": "▼ 5%"
+      },
+      "reference": "Baltic Exchange, 6 sep 2026"
+    },
+    {
+      "group": "Fletes marítimos",
+      "indicator": "Panamax (BPI)",
+      "value": "US$14,200/día",
+      "numeric": 14200.0,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 8%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 12%"
+      },
+      "year": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "reference": "Baltic Exchange, 6 sep 2026"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "Brent",
+      "value": "US$73.20/bbl",
+      "numeric": 73.2,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 3%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 5%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 4%"
+      },
+      "reference": "ICE, 6 sep 2026"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "WTI",
+      "value": "US$70.50/bbl",
+      "numeric": 70.5,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 4%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 6%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "adverse",
+        "label": "▲ 3%"
+      },
+      "reference": "NYMEX, 6 sep 2026"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "USD/TRY",
+      "value": "34.20",
+      "numeric": 34.2,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "favorable",
+        "label": "▲ 1%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "favorable",
+        "label": "▲ 3%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "favorable",
+        "label": "▲ 18%"
+      },
+      "reference": "Bloomberg, 6 sep 2026"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "USD/COP",
+      "value": "4,150",
+      "numeric": 4150.0,
+      "est": false,
+      "week": {
+        "dir": "up",
+        "sentiment": "favorable",
+        "label": "▲ 2%"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "favorable",
+        "label": "▲ 4%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "favorable",
+        "label": "▲ 9%"
+      },
+      "reference": "Banco República Colombia, 6 sep 2026"
+    },
+    {
+      "group": "Macro & divisas",
+      "indicator": "USD/DOP",
+      "value": "58.75",
+      "numeric": 58.75,
+      "est": false,
+      "week": {
+        "dir": "flat",
+        "sentiment": "neutral",
+        "label": "≈"
+      },
+      "month": {
+        "dir": "up",
+        "sentiment": "neutral",
+        "label": "▲ 1%"
+      },
+      "year": {
+        "dir": "up",
+        "sentiment": "neutral",
+        "label": "▲ 2%"
+      },
+      "reference": "Banco Central RD, 6 sep 2026"
+    }
+  ],
+  "landedCostChart": {
+    "origins": [
+      {
+        "origin": "Colombia",
+        "fob": 54,
+        "freight": 14,
+        "total": 68
+      },
+      {
+        "origin": "Egipto",
+        "fob": 46,
+        "freight": 23,
+        "total": 69
+      },
+      {
+        "origin": "Argelia",
+        "fob": 47,
+        "freight": 21,
+        "total": 68
+      },
+      {
+        "origin": "Turquía",
+        "fob": 49,
+        "freight": 18,
+        "total": 67
+      },
+      {
+        "origin": "Vietnam",
+        "fob": 44,
+        "freight": 28,
+        "total": 72
+      }
+    ]
+  },
+  "boardBox": {
+    "argosPR": "Oversupply en PR exige enfoque en costos y diferenciación técnica (PLC, SCM blends); evaluar expansión SCM local para reducir dependencia importada. Jamaica presenta oportunidad para cemento granel colombiano ante nueva terminal.",
+    "domicem": "Clinker turco mantiene ventaja costo/calidad para RD; aprovechar boom turístico Q4. Guyana es prioridad estratégica: explorar partnership con importador local (Gore, Rock Hard) o terminal propia. Preparar reporte CBAM para mantener acceso Europa.",
+    "questions": [
+      "¿Domicem puede asegurar contrato largo plazo con productor turco para blindar precios ante volatilidad TRY?",
+      "¿Conviene joint venture en Guyana vs. exportación spot desde RD para capturar US$650M carretera Georgetown-Lethem?",
+      "¿Argos PR tiene capacidad instalada SCM para sustituir fly ash importada ante cierre plantas carbón EE.UU.?"
+    ]
+  },
+  "sections": [
+    {
+      "id": "s2",
+      "num": 2,
+      "title": "Materias primas",
+      "subtitle": "Clinker turco estable, cemento granel presionado por oversupply regional",
+      "subsections": [
+        {
+          "title": "Clinker FOB Turquía",
+          "content": "Precios firmes US$48-50/t ante demanda sostenida Caribe y África occidental; lead times 4-5 semanas por congestión Bósforo.",
+          "why": "Caribe: Turquía sigue siendo origen más competitivo para importadores RD/Jamaica; depreciación TRY favorece competitividad exportadora turca."
+        },
+        {
+          "title": "Cemento granel FOB",
+          "content": "Colombia y Egipto mantienen oferta agresiva US$56-58/t hacia Puerto Rico, saturando mercado y presionando precios locales -5% interanual.",
+          "why": "Caribe: Oversupply en PR reduce márgenes Argos; oportunidad para Domicem exportar desde RD si logra costos competitivos."
+        },
+        {
+          "title": "Clinker Vietnam",
+          "content": "Gobierno evalúa restricciones exportación para priorizar demanda doméstica; precios FOB Vietnam suben +6% mes a US$44/t.",
+          "why": "Caribe: Potencial escasez asiática desplaza demanda hacia Medio Oriente/Turquía, sosteniendo precios turcos al alza."
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "num": 3,
+      "title": "Combustibles",
+      "subtitle": "Crudo repunta por recortes OPEC+; diesel y petcoke siguen al alza",
+      "subsections": [
+        {
+          "title": "Crudo Brent/WTI",
+          "content": "Brent US$73.20/bbl (+3% sem) y WTI US$70.50/bbl (+4% sem) por extensión recortes saudíes 1M bpd hasta diciembre 2026.",
+          "why": "Caribe: Encarece diesel para transporte y generación eléctrica; impacto directo en costos operativos plantas cemento y logística."
+        },
+        {
+          "title": "Petcoke USGC",
+          "content": "Precio estimado US$82/t FOB USGC (+2% mes), siguiendo rally crudo; oferta limitada por menor refinación estadounidense.",
+          "why": "Caribe: Combustible clave para hornos RD/Jamaica; alza +9% anual erosiona márgenes producción clinker."
+        },
+        {
+          "title": "Gas natural Henry Hub",
+          "content": "US$2.35/MMBtu (+4% sem) por ola calor tardía en EE.UU. y mayor demanda aire acondicionado; inventarios -3% vs. promedio 5 años.",
+          "why": "Caribe: Gas usado en secado materiales y cogeneración; precio aún -12% interanual ofrece alivio relativo vs. petcoke."
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "num": 4,
+      "title": "Fletes marítimos",
+      "subtitle": "Panamax +8% semanal por demanda china y congestión Panamá",
+      "subsections": [
+        {
+          "title": "Índice Baltic Dry",
+          "content": "BDI 1,685 pts (+4% sem), impulsado por segmento Panamax; demanda china de soja/maíz brasileño eleva utilización flota.",
+          "why": "Caribe: Mayor competencia por tonelaje eleva costos importación clinker desde Turquía/Egipto; presión adicional sobre landed cost."
+        },
+        {
+          "title": "Panamax US$14,200/día",
+          "content": "Tarifas repuntan +8% sem por congestión Canal Panamá (restricciones calado) y rutas alternativas Cabo Buena Esperanza más largas.",
+          "why": "Caribe: Ruta Turquía-Caribe típicamente usa Panamax; alza flete +12% mensual añade US$3-4/t a clinker CIF."
+        },
+        {
+          "title": "Handysize/Supramax",
+          "content": "Handysize US$9,800/día (+3% sem) y Supramax US$11,500/día (+5% sem) por demanda regional Asia-Pacífico y menor disponibilidad buques.",
+          "why": "Caribe: Segmentos usados para cemento granel y cargas menores; alza sostiene presión sobre importaciones spot."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "num": 5,
+      "title": "Importaciones",
+      "subtitle": "Jamaica abre nueva terminal; RD sostiene flujo desde Turquía",
+      "subsections": [
+        {
+          "title": "Jamaica terminal Kingston",
+          "content": "Port Authority licita operador para terminal importación cemento granel con capacidad 500,000 t/año; apertura prevista Q2 2027.",
+          "why": "Caribe: Amplía competencia vs. Caribbean Cement; oportunidad para Argos Colombia y Domicem exportar granel a Jamaica."
+        },
+        {
+          "title": "República Dominicana",
+          "content": "Importaciones clinker turco mantienen ritmo 80,000 t/mes; Domicem y Cementos Cibao principales receptores para molienda local.",
+          "why": "Caribe: Dependencia turca persiste por ventaja costo/calidad; vulnerabilidad a volatilidad TRY y fletes Mediterráneo."
+        },
+        {
+          "title": "Puerto Rico oversupply",
+          "content": "Importaciones cemento granel Colombia/Egipto superan demanda local, acumulando inventarios en terminales San Juan y Ponce.",
+          "why": "Caribe: Presión bajista precios afecta Argos PR; requiere estrategia comercial agresiva o reducción importaciones spot."
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "num": 6,
+      "title": "SCM",
+      "subtitle": "Escasez fly ash impulsa precios escoria; oportunidad para blenders caribeños",
+      "subsections": [
+        {
+          "title": "Fly ash shortage EE.UU.",
+          "content": "Cierre plantas carbón acelera escasez ceniza volante; precio estimado +15% interanual a US$48/t, mayor alza en década.",
+          "why": "Caribe: Oportunidad para productores SCM importar escoria asiática, moler localmente y vender a EE.UU./Caribe como sustituto fly ash."
+        },
+        {
+          "title": "Escoria GGBFS",
+          "content": "Precio estimado US$72/t (+12% año) por demanda creciente de cementos bajos carbono (PLC, Type IL); oferta concentrada en Asia/Europa.",
+          "why": "Caribe: Argos PR y Domicem pueden diferenciar producto con blends SCM, capturando premium sostenibilidad y cumpliendo ASTM C595."
+        },
+        {
+          "title": "Regulación PLC adoption",
+          "content": "ASTM C595 facilita uso Portland-limestone cement hasta 15% caliza; adopción acelera en Florida y Caribe ante presión carbono.",
+          "why": "Caribe: Reduce demanda clinker por tonelada cemento; oportunidad reducir costos producción y huella carbono simultáneamente."
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "num": 7,
+      "title": "Competencia",
+      "subtitle": "Titan expande Florida; Caribbean Cement enfrenta nueva terminal Jamaica",
+      "subsections": [
+        {
+          "title": "Titan America Tampa",
+          "content": "Inversión US$12M en blending facility para cementos PLC y SCM; capacidad adicional 300,000 t/año operativa Q1 2027.",
+          "why": "Caribe: Refuerza posición Titan en Florida, compitiendo con importaciones caribeñas; señal de consolidación mercado EE.UU. sureste."
+        },
+        {
+          "title": "Caribbean Cement Jamaica",
+          "content": "Enfrenta apertura terminal importación Kingston que introducirá 500,000 t/año competencia directa; TCL (Titan) histórico dominante con 70% cuota.",
+          "why": "Caribe: Desafío estructural para TCL; oportunidad para nuevos entrantes (Domicem, Argos) capturar share en mercado ~1.5M t/año."
+        },
+        {
+          "title": "Rock Hard Cement (Mark Maloney)",
+          "content": "Importador barbadense expande a Trinidad con licencia importación 60,000 t/año cemento granel; sourcing desde Colombia/Venezuela.",
+          "why": "Caribe: Disruptor regional activo; monitorear expansión hacia mercados CARICOM (Guyana, Surinam) que podría competir con Domicem."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "num": 8,
+      "title": "Caribe",
+      "subtitle": "Boom Guyana lidera demanda; RD turismo impulsa Q4; Haití espera financiamiento BID",
+      "subsections": [
+        {
+          "title": "Guyana infraestructura petrolera",
+          "content": "Licitación carretera Georgetown-Lethem US$650M más proyectos portuarios/aeropuertos suman demanda estimada 300,000 t cemento 2027-28.",
+          "why": "Caribe: Mercado más atractivo región; capacidad local insuficiente abre importaciones; Domicem debe actuar rápido vs. competidores Trinidad/Barbados."
+        },
+        {
+          "title": "República Dominicana turismo",
+          "content": "18 proyectos turísticos aprobados (US$420M) en Punta Cana/Puerto Plata sostienen demanda cemento 70,000 t Q4 2026; sector construcción +6% interanual.",
+          "why": "Caribe: Fortalece posición Domicem en mercado doméstico; permite absorber producción local y reducir dependencia exportación."
+        },
+        {
+          "title": "Haití reconstrucción BID",
+          "content": "BID aprueba US$200M para infraestructura post-huracanes; ejecución incierta por inseguridad; demanda potencial 150,000 t cemento si proyectos avanzan 2027.",
+          "why": "Caribe: Oportunidad adyacente para Domicem RD, pero alto riesgo político/logístico requiere partnering con ONGs/agencias multilaterales."
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "num": 9,
+      "title": "Construcción",
+      "subtitle": "Actividad mixta: PR plana, RD sólida, Guyana explosiva",
+      "subsections": [
+        {
+          "title": "Puerto Rico",
+          "content": "Construcción privada +2% interanual pero infraestructura pública -8% por retrasos fondos FEMA; demanda cemento estancada ~1.2M t/año.",
+          "why": "Caribe: Mercado maduro con crecimiento limitado; oversupply cemento presiona márgenes Argos PR; foco debe ser eficiencia y nichos técnicos."
+        },
+        {
+          "title": "República Dominicana",
+          "content": "Construcción +6% interanual liderada por turismo y residencial; sector público anuncia 12 escuelas y 3 hospitales Q4 2026.",
+          "why": "Caribe: Demanda robusta sostiene utilización plantas Domicem/Cibao; ambiente favorable para mantener precios y explorar exportación excedentes."
+        },
+        {
+          "title": "Barbados y Bahamas",
+          "content": "Barbados licita ampliación aeropuerto Grantley Adams (US$80M); Bahamas inicia resort Baha Mar fase 2 (US$200M, 40,000 t cemento).",
+          "why": "Caribe: Mercados pequeños pero proyectos puntuales generan picos demanda; oportunidad exportación spot para Domicem/Argos Colombia."
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "num": 10,
+      "title": "Regulación",
+      "subtitle": "CBAM exige reporte carbono; aranceles EE.UU. estables; CARICOM revisa CET",
+      "subsections": [
+        {
+          "title": "CBAM fase transitoria",
+          "content": "Exportadores cemento/clinker hacia UE deben reportar emisiones carbono embebido desde Q4 2026; ajuste fronterizo monetario inicia 2027.",
+          "why": "Caribe: Domicem y Argos deben auditar huella carbono para mantener acceso Europa; oportunidad diferenciarse con clinker bajo carbono (gas, biomasa)."
+        },
+        {
+          "title": "Aranceles EE.UU. Sección 232",
+          "content": "No cambios; cemento sigue exento pero acero/aluminio mantienen 25%/10%; lobby industria cementera EE.UU. presiona incluir cemento en revisión 2027.",
+          "why": "Caribe: Riesgo latente para exportaciones Domicem a Florida; monitorear elecciones EE.UU. y postura comercial nueva administración."
+        },
+        {
+          "title": "CARICOM Common External Tariff",
+          "content": "Revisión CET para cemento (actualmente 10-20%) pospuesta a nov 2026; Jamaica y Trinidad presionan reducción para controlar inflación construcción.",
+          "why": "Caribe: Reducción arancelaria abriría más mercados CARICOM a importaciones; amenaza para productores locales, oportunidad para Domicem exportador."
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "num": 11,
+      "title": "Finanzas",
+      "subtitle": "Grupo Argos estable; Cemex global presionado por deuda; TRY y COP volátiles",
+      "subsections": [
+        {
+          "title": "Grupo Argos Colombia",
+          "content": "EBITDA Q2 2026 US$142M (+3% interanual) por volúmenes Colombia/EE.UU.; guía 2026 mantiene crecimiento 4-5% regional.",
+          "why": "Caribe: Solidez financiera Argos respalda inversiones PR; potencial para adquisiciones oportunistas (Jamaica, Guyana) si aparecen activos."
+        },
+        {
+          "title": "Cemex apalancamiento",
+          "content": "Deuda neta/EBITDA 3.2x (Q2 2026) vs. objetivo 2.5x; prioriza desapalancamiento sobre M&A; vende activos no-core Europa.",
+          "why": "Caribe: Cemex menos agresivo en expansión regional; reduce amenaza competitiva para Argos/Domicem en mercados caribeños."
+        },
+        {
+          "title": "Divisas TRY y COP",
+          "content": "USD/TRY 34.2 (+18% año) y USD/COP 4,150 (+9% año) por tasas altas Fed y debilidad economías emergentes; volatilidad persiste.",
+          "why": "Caribe: Depreciación favorece exportadores turcos/colombianos pero introduce riesgo contratos largo plazo; Domicem debe cubrir exposición FX importaciones."
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "num": 12,
+      "title": "ESG",
+      "subtitle": "Presión descarbonización acelera adopción SCM y combustibles alternativos",
+      "subsections": [
+        {
+          "title": "CBAM y reporting carbono",
+          "content": "UE exige reporte emisiones scope 1/2/3 para cemento desde oct 2026; auditorías third-party obligatorias; ajuste fronterizo €50-80/t CO2 desde 2027.",
+          "why": "Caribe: Productores con alta huella carbono (carbón/petcoke) enfrentarán penalización; urgente migrar a gas, biomasa, SCM para mantener competitividad Europa."
+        },
+        {
+          "title": "Holcim net-zero roadmap",
+          "content": "Holcim global anuncia cierre 10 plantas carbón intensivas y conversión a gas/biomasa; meta -25% emisiones 2030 vs. 2020.",
+          "why": "Caribe: Benchmark para Argos/Domicem; inversión en eficiencia energética y combustibles limpios será diferenciador competitivo próximos 3 años."
+        },
+        {
+          "title": "Certificaciones sostenibilidad",
+          "content": "LEED v5 incrementa peso materiales bajos carbono en scoring; proyectos turísticos Caribe priorizan cemento PLC/SCM para certificación.",
+          "why": "Caribe: Oportunidad comercial para Domicem/Argos con portafolio sostenible; premium 5-10% vs. cemento convencional en proyectos high-end."
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "num": 13,
+      "title": "Tecnología",
+      "subtitle": "Digitalización supply chain y sensores IoT ganan tracción en plantas caribeñas",
+      "subsections": [
+        {
+          "title": "Predictive maintenance IoT",
+          "content": "Caribbean Cement implementa sensores IoT en horno Kingston para reducir paros no programados -30%; payback 18 meses.",
+          "why": "Caribe: Tecnología accesible para Domicem/Argos PR; uptime crítico en mercados pequeños donde paros costosos; ROI claro en eficiencia operativa."
+        },
+        {
+          "title": "Blockchain supply chain",
+          "content": "Piloto en Jamaica para tracking cemento importado desde origen hasta obra usando blockchain; transparencia para clientes y compliance CBAM.",
+          "why": "Caribe: Herramienta para verificar origen/huella carbono; anticipa requisitos regulatorios y diferencia oferta vs. importaciones opacas."
+        },
+        {
+          "title": "Drones para inspección canteras",
+          "content": "Domicem prueba drones topografía cantera Los Cacaos RD; reduce tiempo levantamiento 80% y mejora planificación explotación.",
+          "why": "Caribe: Inversión baja (US$50k) con impacto operativo alto; replicable Argos PR para optimización canteras y cumplimiento ambiental."
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "category": "🏢 Empresas & competencia",
+      "title": "Titan America invierte US$12M en blending facility Tampa para cementos SCM",
+      "source": "Titan America press release",
+      "date": "2026-09-05",
+      "url": "https://www.titanamerica.com/news/tampa-expansion-2026",
+      "domicemImpact": false
+    },
+    {
+      "category": "🏝️ Caribe & construcción",
+      "title": "Port Authority Jamaica licita operador para nueva terminal importación cemento Kingston 500,000 t/año",
+      "source": "Jamaica Gleaner",
+      "date": "2026-09-06",
+      "url": "https://www.jamaica-gleaner.com/article/business/kingston-cement-terminal-tender",
+      "domicemImpact": true
+    },
+    {
+      "category": "🏝️ Caribe & construcción",
+      "title": "República Dominicana aprueba 18 proyectos turísticos por US$420M en Punta Cana y Puerto Plata",
+      "source": "Ministerio Turismo RD",
+      "date": "2026-09-04",
+      "url": "https://www.mitur.gob.do/noticias/proyectos-turisticos-septiembre-2026",
+      "domicemImpact": true
+    },
+    {
+      "category": "🏝️ Caribe & construcción",
+      "title": "Guyana anuncia licitación carretera Georgetown-Lethem US$650M financiada por petrodólares",
+      "source": "Stabroek News",
+      "date": "2026-09-03",
+      "url": "https://www.stabroeknews.com/georgetown-lethem-highway-tender",
+      "domicemImpact": true
+    },
+    {
+      "category": "📦 Materias primas, combustibles & fletes",
+      "title": "Fletes Panamax suben +8% semanal a US$14,200/día por congestión Canal Panamá y demanda china granos",
+      "source": "Baltic Exchange",
+      "date": "2026-09-06",
+      "url": "https://www.balticexchange.com/market-information/daily-reports/",
+      "domicemImpact": true
+    },
+    {
+      "category": "📦 Materias primas, combustibles & fletes",
+      "title": "Brent supera US$73/bbl por extensión recortes OPEC+ hasta diciembre 2026",
+      "source": "Reuters",
+      "date": "2026-09-06",
+      "url": "https://www.reuters.com/markets/commodities/opec-extends-cuts-brent-rises",
+      "domicemImpact": true
+    },
+    {
+      "category": "⚖️ Regulación & macro",
+      "title": "CBAM UE exige reporte emisiones carbono embebido cemento desde Q4 2026",
+      "source": "European Commission",
+      "date": "2026-09-02",
+      "url": "https://ec.europa.eu/taxation_customs/cbam-transitional-reporting",
+      "domicemImpact": true
+    },
+    {
+      "category": "EE.UU. — Importación/Exportación",
+      "title": "Escasez fly ash EE.UU. por cierre plantas carbón impulsa precios escoria GGBFS +12% interanual",
+      "source": "Portland Cement Association",
+      "date": "2026-09-05",
+      "url": "https://www.cement.org/newsroom/fly-ash-shortage-2026",
+      "domicemImpact": false
+    }
+  ],
+  "marketMoves": [
+    {
+      "actor": "Port Authority of Jamaica",
+      "action": "import-license",
+      "market": "Jamaica",
+      "detail": "Licita operador terminal importación cemento Kingston con capacidad 500,000 t/año, apertura Q2 2027; rompe dominio TCL/Titan.",
+      "impact": "Oportunidad Domicem y Argos Colombia exportar cemento granel a Jamaica; mercado ~1.5M t/año con crecimiento 3-4% anual.",
+      "url": "https://www.jamaica-gleaner.com/article/business/kingston-cement-terminal-tender"
+    },
+    {
+      "actor": "Rock Hard Cement (Mark Maloney)",
+      "action": "market-entry",
+      "market": "Trinidad",
+      "detail": "Importador barbadense asegura licencia 60,000 t/año cemento granel Trinidad, sourcing Colombia/Venezuela; expande desde Barbados.",
+      "impact": "Disruptor regional activo; monitorear expansión CARICOM (Guyana, Surinam) donde podría competir directamente con Domicem.",
+      "url": "https://www.trinidadexpress.com/business/rock-hard-cement-entry-trinidad"
+    },
+    {
+      "actor": "Gobierno de Guyana",
+      "action": "market-opportunity",
+      "market": "Guyana",
+      "detail": "Licitación carretera Georgetown-Lethem US$650M más proyectos petroleros generan demanda 300,000+ t cemento 2027-28; capacidad local insuficiente.",
+      "impact": "Mercado más atractivo Caribe; Domicem debe establecer partnership local (Gore, importadores) o evaluar terminal propia para capturar share.",
+      "url": "https://www.stabroeknews.com/georgetown-lethem-highway-tender"
+    },
+    {
+      "actor": "CARICOM Secretariat",
+      "action": "tariff-dispute",
+      "market": "CARICOM regional",
+      "detail": "Revisión Common External Tariff cemento (10-20%) pospuesta nov 2026; Jamaica/Trinidad presionan reducción para controlar inflación construcción.",
+      "impact": "Reducción arancelaria abriría mercados CARICOM a importaciones; amenaza productores locales pero oportunidad Domicem exportador desde RD.",
+      "url": "https://caricom.org/cet-review-cement-november-2026"
+    },
+    {
+      "actor": "Ministerio Turismo República Dominicana",
+      "action": "new-capacity",
+      "market": "República Dominicana",
+      "detail": "Aprobación 18 proyectos turísticos US$420M Punta Cana/Puerto Plata sostiene demanda cemento ~70,000 t Q4 2026 y fortalece mercado doméstico.",
+      "impact": "Refuerza posición Domicem en mercado base RD; absorbe producción local y reduce necesidad depender exportaciones ante volatilidad regional.",
+      "url": "https://www.mitur.gob.do/noticias/proyectos-turisticos-septiembre-2026"
+    }
+  ]
+}
