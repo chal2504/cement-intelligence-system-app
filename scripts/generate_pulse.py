@@ -40,7 +40,7 @@ USA la herramienta de busqueda web para hallar los valores MAS RECIENTES de HOY,
 
 REGLAS DE SENTIMENT (convencion de COSTO): para Brent, WTI y BDI, BAJA = "favorable", SUBE = "adverse", plano/sin cambio = "neutral". Para USD/DOP deja "neutral" salvo movimiento fuerte (>1% dia). En "delta" usa ▲ para subidas, ▼ para bajadas, ≈ para plano (ej "▲ 1.2% dia", "▼ 0.8% dia", "≈"). NO inventes: si un dato falla, usa el mas reciente con su valor.
 
-EXTRAORDINARIO: detecta si hoy hay algo relevante: salto del crudo (±3% o mas en el dia) O una noticia del sector cemento/Caribe (escasez, nueva licencia/cuota de importacion, arancel, movimiento de un competidor como Cemex/Rock Hard/The Buying House, algo que afecte a RD/Domicem o PR/Argos). Si lo hay, arma breaking {{"title","detail","url"}} con enlace real verificado. Si NO hay nada, breaking = null.
+EXTRAORDINARIO: detecta si hoy hay algo relevante: salto del crudo (±3% o mas en el dia) O una noticia del sector cemento/Caribe (escasez, nueva licencia/cuota de importacion, arancel, movimiento de un competidor como Cemex/Rock Hard/The Buying House, algo que afecte a RD/Domicem o PR/Argos). Si lo hay, arma breaking {{"title","detail","url"}}. REGLA DE VERACIDAD (obligatoria): SOLO incluye breaking si tienes una fuente real que abriste y verificaste hoy; el "url" debe ser una pagina existente que REALMENTE contenga la noticia (prohibido inventar o adivinar URLs), y "detail" debe decir solo lo que la fuente reporta, sin cifras inventadas. Si no hay una fuente real verificable, breaking = null (mejor sin alerta que una alerta inventada).
 
 Devuelve UNICAMENTE un objeto JSON valido (sin ```, sin texto antes ni despues) con este esquema EXACTO (respeta los nombres AL PIE DE LA LETRA):
 {{

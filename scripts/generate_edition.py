@@ -48,6 +48,12 @@ USA la herramienta de busqueda web para investigar los datos MAS RECIENTES de es
 - EE.UU. importacion/exportacion (Domicem quiere exportar a EE.UU.): escasez, demanda, aranceles Seccion 232/301, antidumping/CVD sobre cemento/clinker, terminales Florida/Golfo.
 - Marca EST toda estimacion triangulada o indice mensual/trimestral. En COSTOS: bajada=favorable(verde), subida=adverso(rojo), plano=neutral. NO inventes: si falta un dato usa el mas reciente con su fecha.
 
+REGLAS DE VERACIDAD (OBLIGATORIAS, prioridad maxima — este informe lo lee la directiva y una cifra inventada destruye la credibilidad):
+1. CIFRAS CON FUENTE: NO escribas ninguna cifra especifica (montos en US$, toneladas, porcentajes, plazos como "2027-28", capacidades) a menos que aparezca LITERALMENTE en una fuente real que hayas abierto y verificado con la busqueda web esta semana. Si no la viste en una fuente, NO la pongas.
+2. LINKS REALES: cada "url" debe ser una pagina real y existente que hayas verificado y que REALMENTE contenga la afirmacion. Prohibido construir o adivinar URLs (ej. inventar "sitio.com/tema-tal"). Si no tienes un link real que respalde el item, NO incluyas ese item.
+3. SEPARA HECHO DE ANALISIS: distingue noticia verificada de tu propia interpretacion. Si extrapolas, proyectas demanda, o infieres algo que la fuente NO dice explicitamente, marca ese texto con "(estimacion propia)" o "EST" — NUNCA presentes una inferencia tuya como si fuera un hecho reportado. La "detail" de news y marketMoves debe describir SOLO lo que la fuente dice; tu lectura va en "impact" (marketMoves) claramente como analisis.
+Ante la duda entre poner un dato dudoso o dejarlo fuera: DEJALO FUERA. Es mejor un informe mas corto y 100% verificable que uno lleno de cifras sin respaldo.
+
 Devuelve UNICAMENTE un objeto JSON valido (sin ```, sin texto antes ni despues) con este esquema EXACTO (respeta los nombres AL PIE DE LA LETRA):
 {{
  "meta": {{"edition": {edition}, "week": "{week}", "dates": "{week}", "timestamp": "{timestamp}"}},
@@ -59,7 +65,7 @@ Devuelve UNICAMENTE un objeto JSON valido (sin ```, sin texto antes ni despues) 
  "boardBox": {{"argosPR": "...", "domicem": "...", "questions": ["...", "...", "..."]}},
  "sections": [ {{"id": "s2", "num": 2, "title": "Materias primas", "subtitle": "...", "subsections": [ {{"title": "Clinker", "content": "...", "why": "Caribe: ..."}} ]}} ] (SOLO s2..s13, num entero 2..13, 12 secciones: Materias primas, Combustibles, Fletes maritimos, Importaciones, SCM, Competencia, Caribe, Construccion, Regulacion, Finanzas, ESG, Tecnologia. cada seccion SOLO 3 subsecciones breves {{title,content,why}} con content de 1-2 frases),
  "news": [ {{"category": "🏢 Empresas & competencia|📦 Materias primas, combustibles & fletes|🏝️ Caribe & construccion|⚖️ Regulacion & macro|EE.UU. — Importacion/Exportacion", "title": "...", "source": "...", "date": "...", "url": "https://...", "domicemImpact": true}} ] (8 noticias, usa EXACTAMENTE una de esas 5 etiquetas; enlaces reales verificados; domicemImpact=true si afecta directo a RD/Domicem),
- "marketMoves": [ {{"actor": "...", "action": "import-license|market-entry|new-capacity|tariff-dispute|market-opportunity", "market": "Jamaica|Republica Dominicana|Puerto Rico|Barbados|Guyana|...", "detail": "...", "impact": "lectura para Argos PR / Domicem", "url": "https://..."}} ] (5 movimientos, por todo el Caribe)
+ "marketMoves": [ {{"actor": "...", "action": "import-license|market-entry|new-capacity|tariff-dispute|market-opportunity", "market": "Jamaica|Republica Dominicana|Puerto Rico|Barbados|Guyana|...", "detail": "SOLO lo que la fuente dice textualmente, con su cifra si la fuente la trae; nada inventado", "impact": "tu lectura/analisis para Argos PR / Domicem (aqui SI puede ir interpretacion, marca EST si proyectas)", "url": "link real y verificado que contenga el hecho"}} ] (hasta 5 movimientos; incluye SOLO los que tengan fuente real verificada — si un movimiento no tiene link real que lo respalde, NO lo pongas aunque quede la lista mas corta)
 }}
 SE CONCISO: 1-2 frases por campo, sin relleno. CRITICO: el JSON debe quedar COMPLETO y CERRADO con TODAS las claves hasta marketMoves al final; prioriza terminar toda la estructura sobre escribir textos largos. Responde SOLO con el JSON."""
 
