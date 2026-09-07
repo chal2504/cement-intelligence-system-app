@@ -10,15 +10,15 @@
   },
   {
    "label": "WTI",
-   "value": "US$91.81/bbl",
-   "delta": "▲ (estimado)",
+   "value": "US$92.06/bbl",
+   "delta": "▲ 0.63% día",
    "sentiment": "adverso"
   },
   {
    "label": "Flete BDI",
-   "value": "3,157",
-   "delta": "≈",
-   "sentiment": "neutral"
+   "value": "3,575",
+   "delta": "▼ 53 pts",
+   "sentiment": "favorable"
   },
   {
    "label": "USD/DOP",
@@ -28,8 +28,8 @@
   }
  ],
  "breaking": {
-  "title": "Tensiones EE.UU.-Irán impulsan crudo hacia US$97/bbl",
-  "detail": "El Brent alcanzó US$97.39 (+1.15% día, +11% mes) tras ataques cruzados en Estrecho de Hormuz; EE.UU. golpeó 3 tanqueros iraníes, Teherán responde con zona marítima restringida. Precios al alza afectan costos de combustible/energía en toda la cadena logística del cemento.",
+  "title": "Tensión EE.UU.-Irán impulsa crudo cerca de US$100",
+  "detail": "Brent se acerca a US$100/bbl tras intercambio de ataques entre EE.UU. e Irán que reavivan preocupaciones sobre disrupciones en el Estrecho de Hormuz. WTI avanzó ~10% en la semana, el mayor rally desde julio. Impacto en costos de energía para cemento.",
   "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
  }
 }
