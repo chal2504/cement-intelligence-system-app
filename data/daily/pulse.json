@@ -1,35 +1,35 @@
 {
- "updated": "2026-09-07",
- "updatedLabel": "7 sep 2026",
+ "updated": "2026-09-08",
+ "updatedLabel": "8 sep 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$97.39/bbl",
-   "delta": "▲ 1.15% día",
-   "sentiment": "adverso"
+   "value": "US$98.44/bbl",
+   "delta": "▲ 1.3% día",
+   "sentiment": "adverse"
   },
   {
    "label": "WTI",
-   "value": "US$91.81/bbl",
-   "delta": "▲ 0.63% día",
-   "sentiment": "adverso"
+   "value": "US$94.29/bbl",
+   "delta": "▲ 3.1% día",
+   "sentiment": "adverse"
   },
   {
    "label": "Flete BDI",
-   "value": "~3,157",
-   "delta": "≈",
-   "sentiment": "neutral"
+   "value": "~3,575",
+   "delta": "▼ 1.5% día",
+   "sentiment": "favorable"
   },
   {
    "label": "USD/DOP",
-   "value": "58.95",
+   "value": "59.20",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
  "breaking": {
-  "title": "Tensiones EE.UU.-Irán disparan crudo hacia US$100/bbl",
-  "detail": "Brent escaló a US$97.39/bbl tras ataques a tanqueros iraníes y amenazas de restringir tráfico en Estrecho de Ormuz. Goldman Sachs advierte crudo podría tocar US$120/bbl si se intensifica conflicto en Medio Oriente.",
-  "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+  "title": "Crudo cerca de US$100 por escalada EE.UU.-Irán en el Estrecho de Ormuz",
+  "detail": "El WTI saltó +3.1% en el día (US$94.29/bbl) y el Brent ronda US$98/bbl tras ataques a petroleros iraníes y un segundo golpe a la refinería saudí de Jizan (Aramco). El tráfico por Ormuz —cerca del 20% del crudo mundial— cayó a unos 10 buques diarios, presionando combustibles y fletes clave para el costo de clínker y cemento en el Caribe.",
+  "url": "https://www.aljazeera.com/economy/2026/9/7/oil-prices-surge-as-us-iran-strikes-intensify-in-strait-of-hormuz"
  }
 }
