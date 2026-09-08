@@ -4,14 +4,14 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$97.05/bbl",
-   "delta": "▲ 0.8% día",
+   "value": "US$97.41/bbl",
+   "delta": "▲ 0.3% día",
    "sentiment": "adverso"
   },
   {
    "label": "WTI",
-   "value": "US$93.05/bbl",
-   "delta": "▲ 1.7% día",
+   "value": "US$92.37/bbl",
+   "delta": "▲ 1.0% día",
    "sentiment": "adverso"
   },
   {
@@ -27,5 +27,9 @@
    "sentiment": "neutral"
   }
  ],
- "breaking": null
+ "breaking": {
+  "title": "Ataques Houthi a instalaciones saudíes disparan crudo",
+  "detail": "Militantes Houthi atacaron refinería de Jazan (400k bbl/día) y otras instalaciones energéticas en Arabia Saudita, hiriendo civiles y causando cierres temporales. Brent alcanzó máximo de 6 semanas cercano a US$98/bbl por temores de disrupciones prolongadas en suministro del Golfo.",
+  "url": "https://www.cnbc.com/2026/09/08/oil-prices-today-brent-wti-hormuz-iran-war.html"
+ }
 }
