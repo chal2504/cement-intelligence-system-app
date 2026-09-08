@@ -4,32 +4,28 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$98.44/bbl",
-   "delta": "▲ 1.3% día",
-   "sentiment": "adverse"
+   "value": "US$97.05/bbl",
+   "delta": "▲ 0.8% día",
+   "sentiment": "adverso"
   },
   {
    "label": "WTI",
-   "value": "US$94.29/bbl",
-   "delta": "▲ 3.1% día",
-   "sentiment": "adverse"
+   "value": "US$93.05/bbl",
+   "delta": "▲ 1.7% día",
+   "sentiment": "adverso"
   },
   {
    "label": "Flete BDI",
-   "value": "~3,575",
-   "delta": "▼ 1.5% día",
-   "sentiment": "favorable"
+   "value": "3,157",
+   "delta": "≈",
+   "sentiment": "neutral"
   },
   {
    "label": "USD/DOP",
-   "value": "59.20",
+   "value": "59.19",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": {
-  "title": "Crudo cerca de US$100 por escalada EE.UU.-Irán en el Estrecho de Ormuz",
-  "detail": "El WTI saltó +3.1% en el día (US$94.29/bbl) y el Brent ronda US$98/bbl tras ataques a petroleros iraníes y un segundo golpe a la refinería saudí de Jizan (Aramco). El tráfico por Ormuz —cerca del 20% del crudo mundial— cayó a unos 10 buques diarios, presionando combustibles y fletes clave para el costo de clínker y cemento en el Caribe.",
-  "url": "https://www.aljazeera.com/economy/2026/9/7/oil-prices-surge-as-us-iran-strikes-intensify-in-strait-of-hormuz"
- }
+ "breaking": null
 }
