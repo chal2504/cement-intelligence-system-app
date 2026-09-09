@@ -4,15 +4,15 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$98.59/bbl",
-   "delta": "≈",
-   "sentiment": "neutral"
+   "value": "US$100.71/bbl",
+   "delta": "▲ 2.9% día",
+   "sentiment": "adverse"
   },
   {
    "label": "WTI",
-   "value": "US$92.81/bbl",
-   "delta": "≈",
-   "sentiment": "neutral"
+   "value": "US$94.24/bbl",
+   "delta": "▲ 3.0% día",
+   "sentiment": "adverse"
   },
   {
    "label": "Flete BDI",
@@ -22,10 +22,14 @@
   },
   {
    "label": "USD/DOP",
-   "value": "58.69",
+   "value": "58.34",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": null
+ "breaking": {
+  "title": "Crudo salta hacia US$100 por escalada Irán-EE.UU. en Golfo Pérsico",
+  "detail": "Brent superó US$99-101/bbl tras ataques iraníes a buques petroleros y tensiones en estrecho de Ormuz que amenazan suministros globales. Houthis atacaron refinería saudí de 400k bpd.",
+  "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+ }
 }
