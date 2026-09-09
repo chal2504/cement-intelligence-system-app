@@ -311,7 +311,29 @@ export default function Dashboard({ allEditions, latestEdition, dailyPulse }: Da
   const getDailyHighlight = () => {
     const pool: any[] = [];
     
-    // Add executiveSummary items
+    // Noticias verificadas (traen fuente + link real) — primero, para que el destacado tenga respaldo
+    currentEdition.news.forEach(item => {
+      pool.push({
+        type: "Noticia",
+        tag: item.source || "Fuente",
+        title: item.title,
+        description: item.date ? `${item.source} · ${item.date}` : (item.source || ""),
+        url: item.url
+      });
+    });
+
+    // Add marketMoves items (traen link)
+    currentEdition.marketMoves.forEach(item => {
+      pool.push({
+        type: "Movimiento de Mercado",
+        tag: item.market,
+        title: `${item.actor}: ${item.action}`,
+        description: `${item.detail} | Impacto: ${item.impact}`,
+        url: item.url
+      });
+    });
+
+    // Add executiveSummary items (sin link)
     currentEdition.executiveSummary.forEach(item => {
       pool.push({
         type: "Resumen Ejecutivo",
@@ -321,17 +343,7 @@ export default function Dashboard({ allEditions, latestEdition, dailyPulse }: Da
       });
     });
 
-    // Add marketMoves items
-    currentEdition.marketMoves.forEach(item => {
-      pool.push({
-        type: "Movimiento de Mercado",
-        tag: item.market,
-        title: `${item.actor}: ${item.action}`,
-        description: `${item.detail} | Impacto: ${item.impact}`
-      });
-    });
-
-    // Add risks.critical items
+    // Add risks.critical items (sin link)
     currentEdition.risks.critical.forEach(item => {
       pool.push({
         type: "Riesgo Crítico",
@@ -343,9 +355,13 @@ export default function Dashboard({ allEditions, latestEdition, dailyPulse }: Da
 
     if (pool.length === 0) return null;
 
+    // Preferir items con fuente real (link) para que el destacado del dia tenga peso.
+    const withLink = pool.filter((p) => p.url && String(p.url).startsWith("http"));
+    const chosen = withLink.length > 0 ? withLink : pool;
+
     const dayOfYear = getDayOfYear();
-    const index = dayOfYear % pool.length;
-    return pool[index];
+    const index = dayOfYear % chosen.length;
+    return chosen[index];
   };
 
   return (
@@ -568,6 +584,28 @@ export default function Dashboard({ allEditions, latestEdition, dailyPulse }: Da
                   <p style={{ margin: 0, fontSize: "13px", color: "var(--text-secondary)", lineHeight: "1.4" }}>
                     {highlight.description}
                   </p>
+                  {highlight.url && String(highlight.url).startsWith("http") && (
+                    <a
+                      href={highlight.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "5px",
+                        marginTop: "12px",
+                        fontSize: "12.5px",
+                        fontWeight: 650,
+                        color: tagColor,
+                        textDecoration: "none",
+                        border: `1px solid ${tagColor}`,
+                        borderRadius: "6px",
+                        padding: "5px 12px",
+                      }}
+                    >
+                      🔗 Ver fuente →
+                    </a>
+                  )}
                 </div>
               );
             })()}
