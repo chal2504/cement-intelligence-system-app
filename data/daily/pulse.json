@@ -22,14 +22,14 @@
   },
   {
    "label": "USD/DOP",
-   "value": "58.34",
-   "delta": "≈",
+   "value": "58.63",
+   "delta": "▲ 0.05% día",
    "sentiment": "neutral"
   }
  ],
  "breaking": {
-  "title": "Petróleo sube >3% por tensiones EE.UU.-Irán",
-  "detail": "Brent superó US$105/bbl por primera vez desde mayo, impulsado por escalada de conflicto en Medio Oriente y temores sobre suministro en Estrecho de Hormuz",
-  "url": "https://convextrade.com/metrics/brent"
+  "title": "Petróleo se dispara por escalada de tensión EEUU-Irán",
+  "detail": "Brent supera US$105/bbl, mayor nivel desde mayo, impulsado por escalada de ataques entre EEUU e Irán en estrecho de Ormuz y ataques Houthi a refinerías saudíes",
+  "url": "https://fortune.com/article/price-of-oil-09-10-2026/"
  }
 }
