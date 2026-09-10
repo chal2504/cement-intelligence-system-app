@@ -4,8 +4,8 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$105.20/bbl",
-   "delta": "▲ 3.9% día",
+   "value": "US$105.71/bbl",
+   "delta": "▲ 3.1% día",
    "sentiment": "adverso"
   },
   {
@@ -28,8 +28,8 @@
   }
  ],
  "breaking": {
-  "title": "Crudo salta por encima de $100/bbl por tensiones EE.UU.-Irán",
-  "detail": "Brent superó los $101.5/bbl por primera vez desde mayo 2026, impulsado por escalada militar entre EE.UU. e Irán y ataques a infraestructura petrolera en Arabia Saudita.",
-  "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+  "title": "Petróleo sube >3% por tensiones EE.UU.-Irán",
+  "detail": "Brent superó US$105/bbl por primera vez desde mayo, impulsado por escalada de conflicto en Medio Oriente y temores sobre suministro en Estrecho de Hormuz",
+  "url": "https://convextrade.com/metrics/brent"
  }
 }
