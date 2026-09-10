@@ -1,17 +1,17 @@
 {
- "updated": "2026-09-09",
- "updatedLabel": "9 sep 2026",
+ "updated": "2026-09-10",
+ "updatedLabel": "10 sep 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$100.71/bbl",
-   "delta": "▲ 2.9% día",
+   "value": "US$105.20/bbl",
+   "delta": "▲ 3.9% día",
    "sentiment": "adverso"
   },
   {
    "label": "WTI",
-   "value": "US$94.24/bbl",
-   "delta": "▲ 3.0% día",
+   "value": "US$97.19/bbl",
+   "delta": "▲ 2.8% día",
    "sentiment": "adverso"
   },
   {
@@ -28,8 +28,8 @@
   }
  ],
  "breaking": {
-  "title": "Tensiones en Estrecho de Hormuz impulsan crudo cerca de US$100",
-  "detail": "Ataques iraníes a tanqueros y refinería saudí Jazan elevan precios del petróleo; disrupciones en exportaciones persas presionan suministro global.",
+  "title": "Crudo salta por encima de $100/bbl por tensiones EE.UU.-Irán",
+  "detail": "Brent superó los $101.5/bbl por primera vez desde mayo 2026, impulsado por escalada militar entre EE.UU. e Irán y ataques a infraestructura petrolera en Arabia Saudita.",
   "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
  }
 }
