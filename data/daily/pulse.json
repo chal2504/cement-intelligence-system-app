@@ -1,17 +1,17 @@
 {
- "updated": "2026-09-10",
- "updatedLabel": "10 sep 2026",
+ "updated": "2026-09-11",
+ "updatedLabel": "11 sep 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$105.71/bbl",
-   "delta": "▲ 3.1% día",
-   "sentiment": "adverso"
+   "value": "US$106.11/bbl",
+   "delta": "▼ 1.4% día",
+   "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$97.19/bbl",
-   "delta": "▲ 2.8% día",
+   "value": "US$102.59/bbl",
+   "delta": "▲ 0.1% día",
    "sentiment": "adverso"
   },
   {
@@ -22,14 +22,10 @@
   },
   {
    "label": "USD/DOP",
-   "value": "58.63",
-   "delta": "▲ 0.05% día",
+   "value": "58.34",
+   "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": {
-  "title": "Petróleo se dispara por escalada de tensión EEUU-Irán",
-  "detail": "Brent supera US$105/bbl, mayor nivel desde mayo, impulsado por escalada de ataques entre EEUU e Irán en estrecho de Ormuz y ataques Houthi a refinerías saudíes",
-  "url": "https://fortune.com/article/price-of-oil-09-10-2026/"
- }
+ "breaking": null
 }
