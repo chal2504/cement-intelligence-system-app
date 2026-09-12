@@ -116,6 +116,37 @@ data.setdefault("marketMoves", [])
 if not data.get("priceBoard") and not data.get("executiveSummary"):
     raise ValueError("La respuesta no trae contenido util (ni priceBoard ni executiveSummary)")
 
+# ---------- 4b. Validar que los links ABRAN de verdad; borrar los muertos ----------
+# Evita publicar "fuentes" con URLs inventadas que no existen (ej. paginas que no cargan).
+import urllib.request, urllib.error
+
+def link_ok(u):
+    """True si la URL responde algo que no sea 404/410 o fallo de conexion/DNS."""
+    if not u or not str(u).lower().startswith("http"):
+        return False
+    hdr = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"}
+    for method in ("HEAD", "GET"):
+        try:
+            req = urllib.request.Request(u, method=method, headers=hdr)
+            with urllib.request.urlopen(req, timeout=10) as r:
+                return getattr(r, "status", 200) not in (404, 410)
+        except urllib.error.HTTPError as e:
+            # el servidor respondio: existe. Solo 404/410 = pagina muerta.
+            return e.code not in (404, 410)
+        except Exception:
+            if method == "GET":
+                return False  # DNS/conexion/timeout: servidor no encontrado
+            continue
+    return False
+
+_removed = 0
+for _item in data.get("news", []) + data.get("marketMoves", []):
+    if isinstance(_item, dict) and _item.get("url"):
+        if not link_ok(_item["url"]):
+            _item["url"] = ""  # link muerto: quitarlo para no mostrar un boton roto
+            _removed += 1
+print(f"Validacion de links: {_removed} URL(s) muerta(s) removida(s).")
+
 with open(outpath, "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 

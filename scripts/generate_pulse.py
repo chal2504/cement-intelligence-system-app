@@ -103,6 +103,32 @@ if not (got_brent and got_wti):
     print("AVISO: no se obtuvieron Brent/WTI utiles; conservo el pulse.json anterior sin cambios.")
     sys.exit(0)
 
+# Validar que el link de la alerta ABRA; si esta muerto, descartar la alerta completa
+# (una alerta sin fuente real que cargue no debe mostrarse).
+import urllib.request, urllib.error
+
+def link_ok(u):
+    if not u or not str(u).lower().startswith("http"):
+        return False
+    hdr = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"}
+    for method in ("HEAD", "GET"):
+        try:
+            req = urllib.request.Request(u, method=method, headers=hdr)
+            with urllib.request.urlopen(req, timeout=10) as r:
+                return getattr(r, "status", 200) not in (404, 410)
+        except urllib.error.HTTPError as e:
+            return e.code not in (404, 410)
+        except Exception:
+            if method == "GET":
+                return False
+            continue
+    return False
+
+if isinstance(data.get("breaking"), dict):
+    if not link_ok(data["breaking"].get("url")):
+        print("Alerta descartada: su link no abre (fuente no verificable).")
+        data["breaking"] = None
+
 with open(outpath, "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=1)
 
