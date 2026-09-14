@@ -1,31 +1,35 @@
 {
- "updated": "2026-09-11",
- "updatedLabel": "11 sep 2026",
+ "updated": "2026-09-14",
+ "updatedLabel": "14 sep 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$106.11/bbl",
-   "delta": "▼ 1.41% día",
-   "sentiment": "favorable"
+   "value": "US$108.34/bbl",
+   "delta": "▲ 3.6% día",
+   "sentiment": "adverse"
   },
   {
    "label": "WTI",
-   "value": "US$102.59/bbl",
-   "delta": "▲ 0.11% día",
-   "sentiment": "neutral"
+   "value": "US$103.83/bbl",
+   "delta": "▲ 3.8% día",
+   "sentiment": "adverse"
   },
   {
    "label": "Flete BDI",
-   "value": "3,584",
+   "value": "3,157",
    "delta": "≈",
    "sentiment": "neutral"
   },
   {
    "label": "USD/DOP",
-   "value": "58.63",
+   "value": "58.34",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": null
+ "breaking": {
+  "title": "Crudo salta +3-4% por cierre de oleoducto saudí tras ataques",
+  "detail": "Arabia Saudita suspendió operaciones del oleoducto Este-Oeste tras ataques con drones, elevando el Brent a $108 y WTI a $104 por barril. Las tensiones en el Estrecho de Ormuz mantienen presión alcista en los mercados energéticos.",
+  "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+ }
 }
