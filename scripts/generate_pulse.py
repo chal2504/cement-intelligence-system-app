@@ -78,6 +78,7 @@ def _looks_like_model_error(e):
 resp = None
 MODEL = None
 _last_err = None
+_errs = []
 for _cand in MODEL_CANDIDATES:
     try:
         print(f"Intentando modelo: {_cand} ...")
@@ -93,12 +94,31 @@ for _cand in MODEL_CANDIDATES:
         break
     except Exception as e:
         _last_err = e
+        _errs.append(f"{_cand} -> {type(e).__name__}: {str(e)[:400]}")
         if _looks_like_model_error(e):
             print(f"Modelo {_cand} no disponible ({type(e).__name__}); probando el siguiente...")
             continue
-        raise
+        break  # error de clave/saldo u otro no relacionado a modelo: dejar de probar
 if resp is None:
-    raise RuntimeError(f"Ningun modelo candidato funciono. Ultimo error: {_last_err}")
+    # DIAGNOSTICO: publicar el error real donde se pueda leer (data/daily/_diag.txt)
+    import traceback, subprocess
+    diag = "DIAG generate_pulse " + updated + "\n\n" + "\n".join(_errs)
+    if _last_err is not None:
+        diag += "\n\n--- ultimo traceback ---\n" + "".join(
+            traceback.format_exception(type(_last_err), _last_err, _last_err.__traceback__))
+    try:
+        with open(os.path.join("data", "daily", "_diag.txt"), "w", encoding="utf-8") as _f:
+            _f.write(diag)
+        subprocess.run(["git", "config", "user.name", "diag"], check=False)
+        subprocess.run(["git", "config", "user.email", "diag@example.com"], check=False)
+        subprocess.run(["git", "add", "data/daily/_diag.txt"], check=False)
+        subprocess.run(["git", "commit", "-m", "diag: error de generacion del pulso"], check=False)
+        subprocess.run(["git", "push"], check=False)
+    except Exception:
+        pass
+    print(diag)
+    raise RuntimeError("Fallo la generacion; ver data/daily/_diag.txt")
+
 
 text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
 
