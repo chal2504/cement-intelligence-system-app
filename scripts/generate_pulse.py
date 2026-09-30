@@ -58,15 +58,47 @@ Devuelve UNICAMENTE un objeto JSON valido (sin ```, sin texto antes ni despues) 
 
 # ---------- 3. Llamada a la API con busqueda web ----------
 client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-MODEL = os.environ.get("CLAUDE_MODEL") or "claude-sonnet-4-5"
 
-with client.messages.stream(
-    model=MODEL,
-    max_tokens=4000,
-    tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 5}],
-    messages=[{"role": "user", "content": PROMPT}],
-) as stream:
-    resp = stream.get_final_message()
+# Modelos vigentes a probar en orden (auto-reparacion ante retiros de modelos).
+_env_model = os.environ.get("CLAUDE_MODEL")
+MODEL_CANDIDATES = [m for m in [
+    _env_model,
+    "claude-sonnet-4-5-20250929",
+    "claude-sonnet-5-5",
+    "claude-opus-4-5-20250929",
+    "claude-3-5-sonnet-20241022",
+] if m]
+
+def _looks_like_model_error(e):
+    msg = str(e).lower()
+    if "authentication" in msg or "credit" in msg or "billing" in msg or "quota" in msg:
+        return False
+    return any(k in msg for k in ("model", "not_found", "not found", "404", "does not exist", "invalid_request"))
+
+resp = None
+MODEL = None
+_last_err = None
+for _cand in MODEL_CANDIDATES:
+    try:
+        print(f"Intentando modelo: {_cand} ...")
+        with client.messages.stream(
+            model=_cand,
+            max_tokens=4000,
+            tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 5}],
+            messages=[{"role": "user", "content": PROMPT}],
+        ) as stream:
+            resp = stream.get_final_message()
+        MODEL = _cand
+        print(f"Modelo OK: {_cand}")
+        break
+    except Exception as e:
+        _last_err = e
+        if _looks_like_model_error(e):
+            print(f"Modelo {_cand} no disponible ({type(e).__name__}); probando el siguiente...")
+            continue
+        raise
+if resp is None:
+    raise RuntimeError(f"Ningun modelo candidato funciono. Ultimo error: {_last_err}")
 
 text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
 
