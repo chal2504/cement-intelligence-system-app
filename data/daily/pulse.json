@@ -16,13 +16,13 @@
   },
   {
    "label": "Flete BDI",
-   "value": "3,070",
-   "delta": "▼ 2.5% día",
+   "value": "~3,070",
+   "delta": "▼ 2.5%",
    "sentiment": "favorable"
   },
   {
    "label": "USD/DOP",
-   "value": "59.65",
+   "value": "59.96",
    "delta": "≈",
    "sentiment": "neutral"
   }
