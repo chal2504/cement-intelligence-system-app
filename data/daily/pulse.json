@@ -1,23 +1,23 @@
 {
- "updated": "2026-10-13",
- "updatedLabel": "13 oct 2026",
+ "updated": "2026-10-14",
+ "updatedLabel": "14 oct 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$105.50/bbl",
-   "delta": "▼ 0.7% día",
-   "sentiment": "favorable"
+   "value": "US$106.19/bbl",
+   "delta": "▲ 0.67% día",
+   "sentiment": "adverso"
   },
   {
    "label": "WTI",
-   "value": "US$92.29/bbl",
-   "delta": "▼ 1.2% día",
-   "sentiment": "favorable"
+   "value": "US$95.37/bbl",
+   "delta": "▲ 1.87% día",
+   "sentiment": "adverso"
   },
   {
    "label": "Flete BDI",
-   "value": "2,852",
-   "delta": "▼ 5.0% día",
+   "value": "~2,850",
+   "delta": "▼",
    "sentiment": "favorable"
   },
   {
@@ -27,9 +27,5 @@
    "sentiment": "neutral"
   }
  ],
- "breaking": {
-  "title": "CARICOM inicia revisión de aranceles de cemento en el Caribe",
-  "detail": "Jamaica se unió a equipos de evaluación regional de CARICOM para revisar cemento y materiales de construcción. Las reuniones están programadas entre el 12-27 de octubre para examinar si productores caribeños pueden satisfacer la demanda regional, lo que podría influir en futuras decisiones de tarifas de importación.",
-  "url": "https://news.jamaica-homes.com/2026/10/10/jamaica-joins-caricom-review-of-cement-and-building-material-tariffs/"
- }
+ "breaking": null
 }
