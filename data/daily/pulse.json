@@ -4,7 +4,7 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$110.50/bbl",
+   "value": "US$110.49/bbl",
    "delta": "▲ 1.0% día",
    "sentiment": "adverso"
   },
@@ -17,14 +17,14 @@
   {
    "label": "Flete BDI",
    "value": "2,511",
-   "delta": "≈",
-   "sentiment": "neutral"
+   "delta": "▼ 1.3% (16-oct)",
+   "sentiment": "favorable"
   },
   {
    "label": "USD/DOP",
-   "value": "61.30",
-   "delta": "▲ 2.8% día",
-   "sentiment": "adverso"
+   "value": "61.29",
+   "delta": "▲ 2.9% día",
+   "sentiment": "neutral"
   }
  ],
  "breaking": null
