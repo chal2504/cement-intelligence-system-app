@@ -1,0 +1,23 @@
+DIAG generate_pulse 2026-10-21
+
+claude-sonnet-4-5-20250929 -> BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'anthropic-version: "2026-10-21" is not a valid version'}, 'request_id': 'req_011CgFf5h3E3DDzpAy7xFAiw'}
+claude-sonnet-5-5 -> BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'anthropic-version: "2026-10-21" is not a valid version'}, 'request_id': 'req_011CgFf5iZVjUy6jhGNv9oyX'}
+claude-opus-4-5-20250929 -> BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'anthropic-version: "2026-10-21" is not a valid version'}, 'request_id': 'req_011CgFf5jM8EwSSVicE9DEVf'}
+claude-3-5-sonnet-20241022 -> BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'anthropic-version: "2026-10-21" is not a valid version'}, 'request_id': 'req_011CgFf5kHRhJKNJH98cPDsn'}
+
+--- ultimo traceback ---
+Traceback (most recent call last):
+  File "/home/runner/work/cement-intelligence-system-app/cement-intelligence-system-app/scripts/generate_pulse.py", line 85, in <module>
+    with client.messages.stream(
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/anthropic/lib/streaming/_messages.py", line 185, in __enter__
+    raw_stream = self.__api_request()
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/anthropic/_base_client.py", line 1330, in _request
+    raise self._make_status_error_from_response(response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'anthropic-version: "2026-10-21" is not a valid version'}, 'request_id': 'req_011CgFf5kHRhJKNJH98cPDsn'}
