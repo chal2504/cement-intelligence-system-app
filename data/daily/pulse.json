@@ -5,31 +5,31 @@
   {
    "label": "Brent",
    "value": "US$111.80/bbl",
-   "delta": "▲ 2.9% día",
+   "delta": "▲ 2.90% día",
    "sentiment": "adverso"
   },
   {
    "label": "WTI",
-   "value": "US$99.32/bbl",
-   "delta": "▲ 2.3% día",
+   "value": "US$99.30/bbl",
+   "delta": "▲ 2.22% día",
    "sentiment": "adverso"
   },
   {
    "label": "Flete BDI",
-   "value": "~2,680",
-   "delta": "▲",
+   "value": "2,680",
+   "delta": "▲ 87 pts",
    "sentiment": "adverso"
   },
   {
    "label": "USD/DOP",
    "value": "61.09",
-   "delta": "≈",
+   "delta": "▼ 0.13%",
    "sentiment": "neutral"
   }
  ],
  "breaking": {
-  "title": "Crudo sube por tensiones en Medio Oriente y ataques en Arabia Saudita",
-  "detail": "Brent alcanzó US$111.80/bbl (+2.9%) y WTI llegó a US$99.39/bbl (+2.3%) tras ataques Houthi en Arabia Saudita que generan preocupación sobre posibles disrupciones al suministro petrolero regional.",
-  "url": "https://grafa.com/en/news/united-states/oil-prices-jump-brent-111-houthi-attacks-saudi-arabia"
+  "title": "Crudo salta +2-3% por ataques Houthi a Arabia Saudita",
+  "detail": "Brent alcanzó US$111+ y WTI US$99+ tras nuevos ataques Houthi a infraestructura petrolera saudí (campo Shaybah), elevando temores de suministro en Medio Oriente.",
+  "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-Above-111-as-Houthis-Strike-Saudi-Targets.html"
  }
 }
