@@ -4,28 +4,32 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$114.47/bbl",
-   "delta": "▲ 1.2% día",
+   "value": "US$114.00/bbl",
+   "delta": "▲ 2.7% día",
    "sentiment": "adverse"
   },
   {
    "label": "WTI",
-   "value": "US$100.84/bbl",
-   "delta": "▲ 1.4% día",
+   "value": "US$101.60/bbl",
+   "delta": "▲ 2.1% día",
    "sentiment": "adverse"
   },
   {
    "label": "Flete BDI",
-   "value": "~2,660",
+   "value": "2,660",
    "delta": "≈",
    "sentiment": "neutral"
   },
   {
    "label": "USD/DOP",
-   "value": "61.09",
+   "value": "61.37",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": null
+ "breaking": {
+  "title": "Crudo Brent salta a US$114 por ataques Houthi en Arabia Saudí",
+  "detail": "Brent alcanzó US$114/barril (máximo desde mayo) ante ataques Houthi contra instalaciones energéticas de Aramco y evacuación de personal en Dhahran. WTI superó US$100/barril. Tensiones regionales impulsan temores de interrupción de suministro.",
+  "url": "https://iranwire.com/en/news/159232-new-record-in-oil-prices-brent-reaches-114/"
+ }
 }
