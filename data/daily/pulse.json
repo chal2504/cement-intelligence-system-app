@@ -4,32 +4,32 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$114.00/bbl",
-   "delta": "▲ 2.7% día",
-   "sentiment": "adverse"
+   "value": "US$113.71/bbl",
+   "delta": "▲ 0.5% día",
+   "sentiment": "adverso"
   },
   {
    "label": "WTI",
-   "value": "US$101.60/bbl",
-   "delta": "▲ 2.1% día",
-   "sentiment": "adverse"
+   "value": "US$101.22/bbl",
+   "delta": "▲ 1.8% día",
+   "sentiment": "adverso"
   },
   {
    "label": "Flete BDI",
    "value": "2,660",
-   "delta": "≈",
-   "sentiment": "neutral"
+   "delta": "▼ 33 pts",
+   "sentiment": "favorable"
   },
   {
    "label": "USD/DOP",
-   "value": "61.37",
+   "value": "61.09",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
  "breaking": {
-  "title": "Crudo Brent salta a US$114 por ataques Houthi en Arabia Saudí",
-  "detail": "Brent alcanzó US$114/barril (máximo desde mayo) ante ataques Houthi contra instalaciones energéticas de Aramco y evacuación de personal en Dhahran. WTI superó US$100/barril. Tensiones regionales impulsan temores de interrupción de suministro.",
-  "url": "https://iranwire.com/en/news/159232-new-record-in-oil-prices-brent-reaches-114/"
+  "title": "Crudo supera US$100/bbl por tensiones Medio Oriente",
+  "detail": "Ataques Huthi a Arabia Saudita y pérdidas de producción en Libia impulsan precios del petróleo a máximos de 5 meses; Brent alcanza US$114/bbl y WTI supera US$100/bbl",
+  "url": "https://www.profilenews.com/en/oil-prices-today-2/"
  }
 }
