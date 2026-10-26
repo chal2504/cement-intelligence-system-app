@@ -1,35 +1,31 @@
 {
- "updated": "2026-10-23",
- "updatedLabel": "23 oct 2026",
+ "updated": "2026-10-26",
+ "updatedLabel": "26 oct 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$113.71/bbl",
-   "delta": "▲ 0.5% día",
-   "sentiment": "adverso"
+   "value": "US$114.51/bbl",
+   "delta": "▼ 1.9% día",
+   "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$101.22/bbl",
-   "delta": "▲ 1.8% día",
-   "sentiment": "adverso"
+   "value": "US$101.04/bbl",
+   "delta": "▼ 2.2% día",
+   "sentiment": "favorable"
   },
   {
    "label": "Flete BDI",
    "value": "2,660",
-   "delta": "▼ 33 pts",
-   "sentiment": "favorable"
+   "delta": "≈",
+   "sentiment": "neutral"
   },
   {
    "label": "USD/DOP",
-   "value": "61.09",
-   "delta": "≈",
+   "value": "61.01",
+   "delta": "▼ 0.2% día",
    "sentiment": "neutral"
   }
  ],
- "breaking": {
-  "title": "Crudo supera US$100/bbl por tensiones Medio Oriente",
-  "detail": "Ataques Huthi a Arabia Saudita y pérdidas de producción en Libia impulsan precios del petróleo a máximos de 5 meses; Brent alcanza US$114/bbl y WTI supera US$100/bbl",
-  "url": "https://www.profilenews.com/en/oil-prices-today-2/"
- }
+ "breaking": null
 }
