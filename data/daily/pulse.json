@@ -1,31 +1,35 @@
 {
- "updated": "2026-10-29",
- "updatedLabel": "29 oct 2026",
+ "updated": "2026-10-30",
+ "updatedLabel": "30 oct 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$110.23/bbl",
-   "delta": "≈",
-   "sentiment": "neutral"
-  },
-  {
-   "label": "WTI",
-   "value": "US$100.85/bbl",
-   "delta": "≈",
-   "sentiment": "neutral"
-  },
-  {
-   "label": "Flete BDI",
-   "value": "2,712",
-   "delta": "▲ 60 pts",
+   "value": "US$113.44/bbl",
+   "delta": "▲ 2.38% día",
    "sentiment": "adverse"
   },
   {
+   "label": "WTI",
+   "value": "US$103.98/bbl",
+   "delta": "▲ 1.94% día",
+   "sentiment": "adverse"
+  },
+  {
+   "label": "Flete BDI",
+   "value": "~2,652",
+   "delta": "≈",
+   "sentiment": "neutral"
+  },
+  {
    "label": "USD/DOP",
-   "value": "60.54",
+   "value": "60.65",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": null
+ "breaking": {
+  "title": "Petróleo salta por ataques Hutíes a infraestructura petrolera saudí",
+  "detail": "Brent sube 1-2.5% hoy alcanzando $113-118/bbl tras reportes de ataques del grupo Hutí a refinerías saudíes clave (Ras Tanura, Rabigh, Abqaiq), elevando riesgos de suministro global.",
+  "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-october-30-2026-brent-surges-1percent-above-116-wti-jumps-1-3percent-past-103-as-houthi-attacks-stoke-supply-fears"
+ }
 }
