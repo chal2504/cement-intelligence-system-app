@@ -1,35 +1,31 @@
 {
- "updated": "2026-10-30",
- "updatedLabel": "30 oct 2026",
+ "updated": "2026-11-02",
+ "updatedLabel": "2 nov 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$113.41/bbl",
-   "delta": "▲ 2.35% día",
-   "sentiment": "adverse"
+   "value": "US$108.35/bbl",
+   "delta": "▼ 4.1% día",
+   "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$104.33/bbl",
-   "delta": "▲ 2.29% día",
-   "sentiment": "adverse"
+   "value": "US$99.87/bbl",
+   "delta": "▼ 4.1% día",
+   "sentiment": "favorable"
   },
   {
    "label": "Flete BDI",
-   "value": "~2,693",
+   "value": "2,714",
    "delta": "≈",
    "sentiment": "neutral"
   },
   {
    "label": "USD/DOP",
-   "value": "60.52",
+   "value": "60.27",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": {
-  "title": "Ataques hutíes a infraestructura petrolera saudí impulsan crudo +2%",
-  "detail": "Precios del crudo subieron hoy tras ataques del grupo hutí yemení a refinerías saudíes incluyendo Ras Tanura y Abqaiq, elevando preocupaciones sobre disrupciones en suministros globales",
-  "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-october-30-2026-brent-surges-1percent-above-116-wti-jumps-1-3percent-past-103-as-houthi-attacks-stoke-supply-fears"
- }
+ "breaking": null
 }
