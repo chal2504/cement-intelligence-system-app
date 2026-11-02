@@ -4,20 +4,20 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$108.35/bbl",
-   "delta": "▼ 4.1% día",
+   "value": "US$104.19/bbl",
+   "delta": "▼ 6.7% día",
    "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$99.87/bbl",
-   "delta": "▼ 4.1% día",
+   "value": "US$96.23/bbl",
+   "delta": "▼ 6.5% día",
    "sentiment": "favorable"
   },
   {
    "label": "Flete BDI",
    "value": "2,714",
-   "delta": "≈",
+   "delta": "▲ 0.07% sem",
    "sentiment": "neutral"
   },
   {
@@ -27,5 +27,9 @@
    "sentiment": "neutral"
   }
  ],
- "breaking": null
+ "breaking": {
+  "title": "Crudo cae más de 6% por esperanzas de paz EE.UU.-Irán",
+  "detail": "Brent y WTI cayeron más de 6% el 2 nov tras señales de que Irán estaría dispuesto a negociar el fin del conflicto; Secretario Rubio dijo que Trump preferiría terminar la guerra pacíficamente, aliviando temores sobre disrupciones de suministro en Medio Oriente.",
+  "url": "https://www.babypips.com/news/daily-financial-forex-market-recap-2026-11-02"
+ }
 }
