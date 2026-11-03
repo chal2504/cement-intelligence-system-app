@@ -1,35 +1,31 @@
 {
- "updated": "2026-11-02",
- "updatedLabel": "2 nov 2026",
+ "updated": "2026-11-03",
+ "updatedLabel": "3 nov 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$105.86/bbl",
-   "delta": "▼ 6.7% día",
+   "value": "US$73.16/bbl",
+   "delta": "▼ 0.30% día",
    "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$96.23/bbl",
-   "delta": "▼ 6.5% día",
+   "value": "US$69.49/bbl",
+   "delta": "▼ 0.27% día",
    "sentiment": "favorable"
   },
   {
    "label": "Flete BDI",
-   "value": "2,714",
-   "delta": "≈",
-   "sentiment": "neutral"
+   "value": "1,156",
+   "delta": "▼ 0.52% día",
+   "sentiment": "favorable"
   },
   {
    "label": "USD/DOP",
-   "value": "60.71",
+   "value": "60.25",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": {
-  "title": "Crudo cae más de 6% por avances diplomáticos EE.UU.-Irán",
-  "detail": "Brent y WTI retrocedieron fuertemente el lunes (6-7%) ante reportes de que EE.UU. e Irán buscan opciones diplomáticas para terminar el conflicto de ocho meses en Medio Oriente, aliviando temores sobre interrupciones de suministro.",
-  "url": "https://cnbc.com/2026/11/01/stock-market-today-live-updates.html"
- }
+ "breaking": null
 }
