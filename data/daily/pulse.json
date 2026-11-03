@@ -4,25 +4,25 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$73.16/bbl",
-   "delta": "▼ 0.30% día",
+   "value": "US$104.28/bbl",
+   "delta": "▼ 0.46% día",
    "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$69.49/bbl",
-   "delta": "▼ 0.27% día",
+   "value": "US$95.84/bbl",
+   "delta": "▼ 0.64% día",
    "sentiment": "favorable"
   },
   {
    "label": "Flete BDI",
-   "value": "1,156",
-   "delta": "▼ 0.52% día",
+   "value": "2,648",
+   "delta": "▼ 2.43% día",
    "sentiment": "favorable"
   },
   {
    "label": "USD/DOP",
-   "value": "60.25",
+   "value": "60.29",
    "delta": "≈",
    "sentiment": "neutral"
   }
