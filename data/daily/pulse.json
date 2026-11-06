@@ -10,8 +10,8 @@
   },
   {
    "label": "WTI",
-   "value": "US$90.46/bbl",
-   "delta": "▼ 0.07% día",
+   "value": "US$90.15/bbl",
+   "delta": "▼ 0.41% día",
    "sentiment": "favorable"
   },
   {
@@ -22,7 +22,7 @@
   },
   {
    "label": "USD/DOP",
-   "value": "60.01",
+   "value": "60.07",
    "delta": "≈",
    "sentiment": "neutral"
   }
