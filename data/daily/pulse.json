@@ -1,31 +1,35 @@
 {
- "updated": "2026-11-06",
- "updatedLabel": "6 nov 2026",
+ "updated": "2026-11-09",
+ "updatedLabel": "9 nov 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$98.16/bbl",
-   "delta": "▼ 0.13% día",
+   "value": "US$93.44/bbl",
+   "delta": "▼ 4.96% día",
    "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$90.15/bbl",
-   "delta": "▼ 0.41% día",
+   "value": "US$86.65/bbl",
+   "delta": "▼ 4.6% día",
    "sentiment": "favorable"
   },
   {
    "label": "Flete BDI",
-   "value": "2,740",
-   "delta": "▲ 1.71% día",
-   "sentiment": "adverse"
+   "value": "2,854",
+   "delta": "▲ 1.8% día",
+   "sentiment": "adverso"
   },
   {
    "label": "USD/DOP",
-   "value": "60.55",
-   "delta": "▲ 1.24% día",
+   "value": "60.81",
+   "delta": "≈",
    "sentiment": "neutral"
   }
  ],
- "breaking": null
+ "breaking": {
+  "title": "Crudo cae más de 4% por esperanzas de paz con Irán",
+  "detail": "Brent cayó 4.96% a $93.44 y WTI bajó 4.6% a $86.65 el 9 nov mientras traders apuestan por un fin diplomático a la guerra con Irán",
+  "url": "https://journalarta.com/en/2026/11/09/oil-price-today-brent-falls-4-96-to-93-44-on-iran-peace-hopes-as-gold-climbs/"
+ }
 }
