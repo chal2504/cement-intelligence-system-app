@@ -4,14 +4,14 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$93.86/bbl",
-   "delta": "▼ 4.5% día",
+   "value": "US$93.44/bbl",
+   "delta": "▼ 4.96% día",
    "sentiment": "favorable"
   },
   {
    "label": "WTI",
-   "value": "US$87.69/bbl",
-   "delta": "▼ 3.5% día",
+   "value": "US$86.65/bbl",
+   "delta": "▼ 4.60% día",
    "sentiment": "favorable"
   },
   {
@@ -22,14 +22,14 @@
   },
   {
    "label": "USD/DOP",
-   "value": "60.58",
+   "value": "60.81",
    "delta": "≈",
    "sentiment": "neutral"
   }
  ],
  "breaking": {
-  "title": "Petróleo: caída abrupta por esperanzas de paz con Irán",
-  "detail": "Brent cayó 4.96% a US$93.44 y WTI 4.6% a US$86.65 el lunes por reportes de posibles conversaciones diplomáticas EE.UU.-Irán para resolver conflicto en Estrecho de Ormuz, tras caída semanal de 16% la semana pasada.",
+  "title": "Crudo cae ~5% por esperanzas de acuerdo diplomático con Irán",
+  "detail": "Brent cayó 4.96% a $93.44 y WTI 4.6% a $86.65 el lunes por reportes sobre posible fin diplomático de tensiones con Irán, aliviando preocupaciones sobre suministro del Golfo Pérsico",
   "url": "https://journalarta.com/en/2026/11/09/oil-price-today-brent-falls-4-96-to-93-44-on-iran-peace-hopes-as-gold-climbs/"
  }
 }
