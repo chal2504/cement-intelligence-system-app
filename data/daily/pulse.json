@@ -4,8 +4,8 @@
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$94.88/bbl",
-   "delta": "▼ 1.0% día",
+   "value": "US$91.84/bbl",
+   "delta": "▼ 4.17% día",
    "sentiment": "favorable"
   },
   {
@@ -22,7 +22,7 @@
   },
   {
    "label": "USD/DOP",
-   "value": "60.38",
+   "value": "60.58",
    "delta": "≈",
    "sentiment": "neutral"
   }
