@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-18",
- "updatedLabel": "18 nov 2026",
+ "updated": "2026-11-19",
+ "updatedLabel": "19 nov 2026",
  "indicators": [
   {
    "label": "Brent",
-   "value": "US$91.68/bbl",
-   "delta": "▼ 1.57% día",
-   "sentiment": "favorable"
+   "value": "US$92.69/bbl",
+   "delta": "▲ 0.8% día",
+   "sentiment": "adverso"
   },
   {
    "label": "WTI",
-   "value": "US$83.78/bbl",
-   "delta": "▼ 0.99% día",
-   "sentiment": "favorable"
+   "value": "US$83.27/bbl",
+   "delta": "▲ 0.6% día",
+   "sentiment": "adverso"
   },
   {
    "label": "Flete BDI",
-   "value": "2,893",
-   "delta": "▼ 0.96% día",
+   "value": "2,914",
+   "delta": "▼ 0.2% día",
    "sentiment": "favorable"
   },
   {
    "label": "USD/DOP",
-   "value": "60.16",
+   "value": "60.30",
    "delta": "≈",
    "sentiment": "neutral"
   }
